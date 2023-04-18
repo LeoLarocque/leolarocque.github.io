@@ -137,23 +137,22 @@
             border-radius: 5px;
         }
         #lead {
-            background-color: yellow;
+            background-color: black;
             border: 7px solid white;
             border-radius: 3px;
             color: black;
             padding: 30px;
             text-align: center;
             transition: transform 1s;
-            animation-duration: 3s;
+            animation-duration: 2s;
             animation-name: cssanim;
             animation-iteration-count: infinite;
         }
         @keyframes cssanim {
-            0% {background-color: yellow; color: black;}
-            33% {background-color: purple; color: white;}
+            0% {background-color: purple; color: white;}
+            33% {background-color: yellow; color: black;}
             66% {background-color: green; color: white;}
-            66% {background-color: yellow; color: black;}
-            
+            100% {background-color: purple; color: white;}  
         }
         #lead:hover {
             transform: scale(1.3)
