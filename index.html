@@ -144,6 +144,14 @@
             padding: 30px;
             text-align: center;
             transition: transform 1s;
+            animation-duration: 1s;
+            animation-name: cssanim;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cssanim {
+            0% {background-color: black; color: white;}
+            50% {background-color: purple; color: white;}
+            100% {background-color: yellow; color: black;}
         }
         #lead:hover {
             transform: scale(1.3)
