@@ -2,6 +2,7 @@
 <html lang = "en">
 <head>
     <title>Volleyball</title>
+
     <style>
         html {
             scroll-behavior: smooth;
@@ -284,22 +285,13 @@
             text-align: center;
         }
     </style>
-        <link rel="icon" href="https://th.bing.com/th/id/OIP.jRa10wQ9AYynYyX_fdd2bAHaHY?rs=1&pid=ImgDetMain" type="image/x-icon">
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.jRa10wQ9AYynYyX_fdd2bAHaHY?rs=1&pid=ImgDetMain" type="image/x-icon">
 </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JGG8KMFCGL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JGG8KMFCGL');
-</script>
 <body>
     <div class = "side-bar">
-        <a href = "#Table1">Info Table</a>
+        <a href = "#Table">Info Table</a>
         <br>
-        <a href = "Brawlers.html">Brawlers</a>
+        <a href = "#Name1">Brawlers</a>
         <br>
         <a href = "#Name2">Chargers</a>
         <br>
@@ -363,7 +355,7 @@
 
     <a href="https://imgbb.com/"><img src="https://i.ibb.co/mBMhgBF/Awesome-Spike-Leo.gif" alt="Awesome-Spike-Leo"></a>
     <br>
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co/X3s3MVJ/Awesome-Spike-Keenan.gif" alt="Awesome-Spike-Keenan"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/X3s3MVJ/Awesome-Spike-Keenan.gif" alt="Awesome-Spike-Keenan""></a>
     <br>
     <a href="https://imgbb.com/"><img src="https://i.ibb.co/qFN8nnj/Awesome-Spike-Scott.gif" alt="Awesome-Spike-Scott"></a>
     <br>
@@ -498,52 +490,7 @@
             <td class = "percentage"></td>
         </tr>
     </table>
-    <script>
-function sortTable() {
-  var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("Table1");
-  switching = true;
-  while (switching) {
-    switching = false;
-    rows = table.rows;
-    for (i = 1; i < (rows.length - 1); i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[2];
-      y = rows[i + 1].getElementsByTagName("TD")[2];
-      if (Number(x.innerHTML) < Number(y.innerHTML)) {
-        shouldSwitch = true;
-        break;
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-    }
-  }
-}
-var number_of_games = 16;
-function tablebrains() {
-  var table = document.getElementById("Table1");
-  var rows = table.rows;
-
-  for (var i = 1; i < rows.length; i++) {
-    var valueCell = rows[i].getElementsByClassName("wins")[0];
-    var lossesCell = rows[i].getElementsByClassName("losses")[0];
-    var percentageCell = rows[i].getElementsByClassName("percentage")[0];
-
-    var value = Number(valueCell.innerHTML);
-    var losses = number_of_games - value;
-    var percentage = (value / number_of_games) * 100;
-
-    percentageCell.innerHTML = percentage.toFixed(2) + "%";
-    lossesCell.innerHTML = losses.toFixed (0);
-  }
-}
-
-sortTable();
-tablebrains();
-
-</script>
+    <script src="volleyballjava.js"> </script>
 
     <br>
     <br>
