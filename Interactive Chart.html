@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interactive Chart</title>
+    <link href="volleyball.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            background-image: url("https://www.kpu.ca/sites/default/files/Recreation/volleyball-league.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: auto;
+            width: 50%;
+            cursor: cell;
+        }   
+        .team-box {
+            width: 100px;
+            height: 50px;
+            padding: 5px;
+            border: 3px solid black;
+            border-radius: 15px;
+            position: absolute;
+            right: 0;
+            transition: width 1.5s;
+        }
+
+        .team-box:hover {
+            width: 250px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class = "side-bar">
+        <a href = "#Table1">Info Table</a>
+        <br>
+        <a href = "Brawlers.html">Brawlers</a>
+        <br>
+        <a href = "Chargers.html">Chargers</a>
+        <br>
+        <a href = "Grizzlies.html">Grizzlies</a>
+        <br>
+        <a href = "Patriots.html">Patriots</a>
+        <br>
+        <a href = "Royals.html">Royals</a>
+        <br>
+        <a href = "Sabres.html">Sabres</a>
+        <br>
+        <a href = "Spartans.html">Spartans</a>
+        <br>
+        <a href = "Tempests.html">Tempests</a>
+    </div>
+    <h1 style="text-align: center;color:white;">Interactive Chart</h1>
+    <p style="text-align: center; color: white;">Hover over the boxes to view the each team's wins </p>
+    <p style="text-align: center; color: white;">compared to the other teams.</p>
+    <div id="divBrawlers" class="team-box" style="background: red; color: white;">
+        <h2>Brawlers</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="divChargers" class="team-box" style="background: yellow;">
+        <h2>Chargers</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="divGrizzlies" class="team-box" style="background: darkgreen; color: white;">
+        <h2>Grizzlies</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="divJets" class="team-box" style="background: lightblue; ">
+        <h2>Jets</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="divPatriots" class="team-box" style="background: darkgreen;">
+        <h2>Patriots
+        </h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="divRoyals" class="team-box" style="background: purple; color: white;">
+        <h2>Royals</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="divSabres" class="team-box" style="background: black; color: white;">
+        <h2>Sabres</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="divSpartans" class="team-box" style="background: grey; ">
+        <h2>Spartans</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="divTempests" class="team-box" style="background: blue; color: white;">
+        <h2>Tempests</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Add more div elements as needed -->
+
+    <script>
+        // JavaScript code to dynamically change the width based on wins
+        const teamWins = {
+            divBrawlers: 11,  // Adjust the wins for each team accordingly
+            divChargers: 14,
+            divGrizzlies: 3,
+            divJets: 9,
+            divPatriots: 9,
+            divRoyals: 10, 
+            divSabres: 3, 
+            divSpartans: 3,
+            divTempests: 10,
+            // Add more teams as needed
+        };
+
+        Object.keys(teamWins).forEach((teamId) => {
+            const teamBox = document.getElementById(teamId);
+
+            teamBox.addEventListener('mouseenter', () => {
+                const wins = teamWins[teamId];
+                const newWidth = Math.min(wins * 20, 250); // Adjust the scaling factor as needed
+                teamBox.style.width = `${newWidth * 5}px`;
+            });
+
+            teamBox.addEventListener('mouseleave', () => {
+                teamBox.style.width = '100px';
+            });
+        });
+    </script>
+</body>
+
+</html>
