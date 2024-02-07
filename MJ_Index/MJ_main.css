@@ -10,9 +10,19 @@ body {
 }
 .title {
     position: sticky;
+    margin: auto;
     background-color: white;
     color: rgb(85,130,160);
     width: 30%;
-    align: center;
     text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    background-color:white;
+    color: rgb(85,130,160);
 }
