@@ -1,3 +1,10 @@
 html {
     scroll-behaviour: smooth;
 }
+
+body {
+    background-image: url("volleyball-league.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
