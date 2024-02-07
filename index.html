@@ -13,8 +13,8 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            margin: auto;
-            width: 30%;
+            /*margin: auto;*/
+            /*width: 30%;*/
             cursor: cell;
         }
         #Title {
@@ -28,26 +28,41 @@
         #leftcontainer {
             position: fixed;
         }
-        .side-bar {
-            height: 100%;
-            width: 160px;
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
             position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
         }
-        .side-bar a {
-            padding: 6px 8px 6px 16px;
+        .dropdown {
+            position: fixed;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
             text-decoration: none;
-            font-size: 25px;
-            color: #818181;
             display: block;
         }
-        .side-bar a:hover {
-            color: #f1f1f1;
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
         }
         #Table1 {
             font-family: arial, sans-serif;
@@ -213,62 +228,59 @@
             background-color: red;
             border: 3px solid gold;
             border-radius: 5px;
-            width: 70%;
+            width: 50%;
             text-align: center;
-            width: 30% 
         }
         #c2team {
             background-color: yellow;
             color: black;
             border: 3px solid rgb(205, 127, 50);
             border-radius: 5px;
-            width: 70%;
+            width: 50%;
             text-align: center;
-            width: 30% 
         }
         #t2team {
             background-color: blue;
             border: 3px solid silver;
             border-radius: 5px;
-            width: 70%;
+            width: 50%;
             text-align: center;
-            width: 30%
         }
         #g2team {
             background-color: darkgreen;
-            width: 70%;
+            width: 50%;
             border-radius: 5px;
             text-align: center;
         }
         #j2team {
             background-color: lightblue;
-            width: 70%;
+            width: 50%;
             color: black;
             border-radius: 5px;
             text-align: center;
         }
         #p2team {
             background-color: green;
-            width: 70%;
+            width: 50%;
             color: black;
             border-radius: 5px;
             text-align: center;
         }
         #r2team {
             background-color: purple;
-            width: 70%;
+            width: 50%;
             border-radius: 5px;
             text-align: center;
         }
         #sa2team {
             background-color: black;
-            width: 70%;
+            width: 50%;
             border-radius: 5px;
             text-align: center;
         }
         #sp2team {
             background-color: grey;
-            width: 70%;
+            width: 50%;
             border-radius: 5px;
             text-align: center;
         }
@@ -286,30 +298,21 @@
     <link rel="icon" href="https://th.bing.com/th/id/OIP.jRa10wQ9AYynYyX_fdd2bAHaHY?rs=1&pid=ImgDetMain" type="image/x-icon">
 </head>
 <body>
-    <div class = "side-bar">
-        <a href = "#Table1">Info Table</a>
-        <br>
-        <a href = "Brawlers.html">Brawlers</a>
-        <br>
-        <a href = "Chargers.html">Chargers</a>
-        <br>
-        <a href = "Grizzlies.html">Grizzlies</a>
-        <br>
-        <a href = "Jets.html">Jets</a>
-        <br>
-        <a href = "Patriots.html">Patriots</a>
-        <br>
-        <a href = "Royalsvballsite.html">Royals</a>
-        <br>
-        <a href = "Sabres.html">Sabres</a>
-        <br>
-        <a href = "Spartans.html">Spartans</a>
-        <br>
-        <a href = "Tempests.html">Tempests</a>
-        <br>
-        <a href = "Gallery.html">Gallery</a>
-        <br>
-        <a href = "Interactive Chart.html">Interactive Chart</a>
+    <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Interactive Chart.html">Chart</a>
+            <a href="Brawlers.html">Brawlers</a>
+            <a href="Chargers.html">Chargers</a>
+            <a href="Grizzlies.html">Grizzlies</a>
+            <a href="Jets.html">Jets</a>
+            <a href="Patriots.html">Patriots</a>
+            <a href="Royalsvballsite.html">Royals</a>
+            <a href="Spartans.html">Spartans</a>
+            <a href="Temepests.html">Tempests</a>
+        </div>
     </div>
     <h1 id = "Title">Volleyball Tournament 2023</h1>
     <!--<h2 id = "lead">Brawlers Conquer!</h2>-->
