@@ -4,365 +4,41 @@
     <title>Volleyball</title>
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            background-color: white;
-            
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            /*margin: auto;*/
-            /*width: 30%;*/
-            cursor: cell;
-        }
-        #Title {
-            background-color: black;
-            border: 7px solid white;
-            border-radius: 3px;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        #leftcontainer {
-            position: fixed;
-        }
-        .dropbtn {
-            background-color: black;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            position: fixed;
-        }
-        .dropdown {
-            position: fixed;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {background-color: #f1f1f1}
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
         
-        .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
-        }
-        #Table1 {
-            font-family: arial, sans-serif;
-            width: 100%;
-            background-color: black;
-            border: white;
-            border-radius: 5px;
-        }
-        td, th {
-            color: white;
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        ul :hover {
-            background-color: white;
-            color: black;
-            width: 45%;
-        }
-        #Name1 {
-            background-color: red;
-            border-radius: 5px;
-            text-align: center;
-            width: 100%
-        }
-        #Name2 {
-            background-color: yellow;
-            color: black;
-            border-radius: 5px;
-            text-align: center;
-            width: 100%
-        }
-        #Name3 {
-            background-color: darkgreen;
-            border-radius: 5px;
-            text-align: center;
-            width: 100%
-        }
-        #Name4 {
-            background-color: lightskyblue;
-            color: black;
-            border-radius: 5px;
-            text-align: center;
-            width: 100%
-        }
-        #Name5 {
-            background-color: green;
-            border-radius: 5px;
-            text-align: center;
-            width: 100%
-        }
-        #Name6 {
-            background-color: purple;
-            border-radius: 5px;
-            color: white;
-            text-align: center;
-            width: 100%
-        }
-        #Name7 {
-            background-color: black;
-            border: 2px solid white;
-            border-radius: 5px;
-            color: white;
-            text-align: center;
-            width: 100%
-        }
-        #Name8 {
-            background-color: grey;
-            color: black;
-            border-radius: 5px;
-            text-align: center;
-            width: 100%
-        }
-        #Name9 {
-            background-color: blue;
-            border-radius: 5px;
-            color: white;
-            text-align: center;
-            width: 100%
-        }
-        .main {
-            background-color: black;
-            color: white;
-            border: 3px solid white;
-            padding: 5px;
-            border-radius: 5px;
-        }
-        #lead {
-            background-color: red;
-            border: 7px solid white;
-            border-radius: 3px;
-            color: white;
-            padding: 30px;
-            text-align: center;
-            transition: transform 1s;
-        }
-        #lead:hover {
-            transform: scale(1.3)
-        }
-        #bteam {
-            background-color: red;
-            border-radius: 5px;
-            text-align: center;
-            width: 30% 
-        }
-        #cteam {
-            background-color: yellow;
-            color: black;
-            border-radius: 5px;
-            text-align: center;
-            width: 30% 
-        }
-        #gteam {
-            background-color: darkgreen;
-            border-radius: 5px;
-            text-align: center;
-            width: 30%
-        }
-        #jteam {
-            background-color: lightblue;
-            color: black;
-            border-radius: 5px;
-            text-align: center;
-            width: 30%
-        }
-        #pteam {
-            background-color: green;
-            color: black;
-            border-radius: 5px;
-            text-align: center;
-            width: 30%
-        }
-        #rteam {
-            background-color: purple;
-            border-radius: 5px;
-            text-align: center;
-            width: 30%
-        }
-        #sateam {
-            background-color: black;
-            border-radius: 5px;
-            text-align: center;
-            width: 30%
-        }
-        #spteam {
-            background-color: grey;
-            border-radius: 5px;
-            text-align: center;
-            width: 30%
-        }
-        #tteam {
-            background-color: blue;
-            border-radius: 5px;
-            text-align: center;
-            width: 30%
-        }
-        #info {
-            border: 3px solid black;
-            background-color: white;
-            padding: 3px;
-        }
-        #b2team {
-            background-color: red;
-            border: 3px solid gold;
-            border-radius: 5px;
-            width: 50%;
-            text-align: center;
-        }
-        #c2team {
-            background-color: yellow;
-            color: black;
-            border: 3px solid rgb(205, 127, 50);
-            border-radius: 5px;
-            width: 50%;
-            text-align: center;
-        }
-        #t2team {
-            background-color: blue;
-            border: 3px solid silver;
-            border-radius: 5px;
-            width: 50%;
-            text-align: center;
-        }
-        #g2team {
-            background-color: darkgreen;
-            width: 50%;
-            border-radius: 5px;
-            text-align: center;
-        }
-        #j2team {
-            background-color: lightblue;
-            width: 50%;
-            color: black;
-            border-radius: 5px;
-            text-align: center;
-        }
-        #p2team {
-            background-color: green;
-            width: 50%;
-            color: black;
-            border-radius: 5px;
-            text-align: center;
-        }
-        #r2team {
-            background-color: purple;
-            width: 50%;
-            border-radius: 5px;
-            text-align: center;
-        }
-        #sa2team {
-            background-color: black;
-            width: 50%;
-            border-radius: 5px;
-            text-align: center;
-        }
-        #sp2team {
-            background-color: grey;
-            width: 50%;
-            border-radius: 5px;
-            text-align: center;
-        }
-        #Table2 {
-            font-family: arial, sans-serif;
-            background-color: black;
-            width: 100%;
-            border: white;
-            border-radius: 5px;
-        }
-        .placement {
-            text-align: center;
-        }
     </style>
     <link rel="icon" href="https://th.bing.com/th/id/OIP.jRa10wQ9AYynYyX_fdd2bAHaHY?rs=1&pid=ImgDetMain" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="dropdown">
-        <button class="dropbtn">MENU</button>
-        <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="Interactive Chart.html">Chart</a>
-            <a href="Brawlers.html">Brawlers</a>
-            <a href="Chargers.html">Chargers</a>
-            <a href="Grizzlies.html">Grizzlies</a>
-            <a href="Jets.html">Jets</a>
-            <a href="Patriots.html">Patriots</a>
-            <a href="Royalsvballsite.html">Royals</a>
-            <a href="Spartans.html">Spartans</a>
-            <a href="Temepests.html">Tempests</a>
-        </div>
+    <div class = "side-bar">
+        <a href = "#Table1">Info Table</a>
+        <br>
+        <a href = "Brawlers.html">Brawlers</a>
+        <br>
+        <a href = "Chargers.html">Chargers</a>
+        <br>
+        <a href = "Grizzlies.html">Grizzlies</a>
+        <br>
+        <a href = "Jets.html">Jets</a>
+        <br>
+        <a href = "Patriots.html">Patriots</a>
+        <br>
+        <a href = "Royalsvballsite.html">Royals</a>
+        <br>
+        <a href = "Sabres.html">Sabres</a>
+        <br>
+        <a href = "Spartans.html">Spartans</a>
+        <br>
+        <a href = "Tempests.html">Tempests</a>
+        <br>
+        <a href = "Gallery.html">Gallery</a>
+        <br>
+        <a href = "Interactive Chart.html">Interactive Chart</a>
     </div>
-    <h1 id = "Title">Volleyball Tournament 2023</h1>
+    <h1 class = "title">Volleyball Tournament 2024</h1>
     <!--<h2 id = "lead">Brawlers Conquer!</h2>-->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <table id = "Table2">
-        <tr>
-            <th>Place</th>
-            <th>Team</th>
-        </tr>
-        <tr>
-            <td id = "b2team">Brawlers</td>
-            <td class = "placement">1</td>
-        </tr>
-        <tr>
-            <td id = "t2team">Tempests</td>
-            <td class = "placement">2</td>
-        </tr>
-        <tr>
-            <td id = "c2team">Chargers</td>
-            <td class = "placement">3</td>
-        </tr>
-        <tr>
-            <td id = "r2team">Royals</td>
-            <td class = "placement">4</td>
-        </tr>
-        <tr>
-            <td id = "p2team">Patriots</td>
-            <td class = "placement">5</td>
-        </tr>
-        <tr>
-            <td id = "j2team">Jets</td>
-            <td class = "placement">5</td>
-        </tr>
-        <tr>
-            <td id = "sp2team">Spartans</td>
-            <td class = "placement">6</td>
-        </tr>
-        <tr>
-            <td id = "sa2team">Sabres</td>
-            <td class = "placement">6</td>
-        </tr>
-        <tr>
-            <td id = "g2team">Grizzlies</td>
-            <td class = "placement">6</td>
-        </tr>
-    </table>
+   
+    
     <br>
     <br>
     <br>
@@ -376,6 +52,7 @@
             <th>Wins</th>
             <th>Loses</th>
             <th>Win %</th>
+            <th>Place</th>
         </tr>
         <tr>
             <td id = "bteam">Brawlers</td>
@@ -383,6 +60,7 @@
             <td class = "wins">11</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = 'place'></td>
         </tr>
         <tr>
             <td id = "cteam">Chargers</td>
@@ -390,6 +68,7 @@
             <td class = "wins">14</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = "place"></td>
         </tr>
         <tr>
             <td id = "gteam">Grizzlies</td>
@@ -397,6 +76,7 @@
             <td class = "wins">3</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = 'place'></td>
         </tr>
         <tr>
             <td id = "jteam">Jets</td>
@@ -404,6 +84,7 @@
             <td class = "wins">9</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = "place"></td>
         </tr>
         <tr>
             <td id = "pteam">Patriots</td>
@@ -411,6 +92,7 @@
             <td class = "wins">9</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = "place"></td>
         </tr>
         <tr>
             <td id = "rteam">Royals</td>
@@ -418,6 +100,7 @@
             <td class = "wins">10</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = "place"></td>
         </tr>
         <tr>
             <td id = "sateam">Sabres</td>
@@ -425,6 +108,7 @@
             <td class = "wins">3</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = "place"></td>
         </tr>
         <tr>
             <td id = "spteam">Spartans</td>
@@ -432,6 +116,7 @@
             <td class = "wins">3</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = "place"></td>
         </tr>
         <tr>
             <td id = "tteam">Tempests</td>
@@ -439,6 +124,7 @@
             <td class = "wins">10</td>
             <td class = "losses"></td>
             <td class = "percentage"></td>
+            <td class = "place"></td>
         </tr>
     </table>
     <script src="volleyballjava.js"> </script>
@@ -449,14 +135,9 @@
     <br>
     <br>
     <br>
-    <h3>P.S. Don't get mad at me if I spelled your name wrong. ;) I have to give Jack credit for suggesting a website for the tournament so here it is. Thx bro.</h3>
-    <h2>Lead Developer</h2>
-    <h3>Leo (here is another website he made. thewebsite7.w3spaces.com)</h3>
-    <br>
+    <h3>P.S. Don't get mad at me if I spelled your name wrong. ;) I have to give Jack credit for suggesting a website for the tournament so here it is. Thx bro. Zachary also helped develope this website</h3>
     <h2>Developers</h2>
+    <h3>Leo</h3>
     <h3>Zachary</h3>
-    <h3>Wesley</h3>
-    <h3>Copilot</h3>
-    <h3>Matthew</h3>
 </body>
 </html>
