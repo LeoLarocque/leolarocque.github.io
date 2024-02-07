@@ -6,10 +6,12 @@
             border: none;
             cursor: pointer;
             position: fixed;
+            left: 3%;
         }
         .dropdown {
             position: fixed;
             display: inline-block;
+            left: 3%;
         }
         .dropdown-content {
             display: none;
