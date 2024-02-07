@@ -23,6 +23,12 @@ body {
     position: absolute;
     left: 2%;
     top: 2%;
-    background-color:white;
     color: rgb(85,130,160);
 }
+.drop-btn {
+    background-color:rgb(255,255,255);
+    color: black;
+    border: none;
+}
+.drop-btn:hover {
+    background-color: rgb(200,200,200);
