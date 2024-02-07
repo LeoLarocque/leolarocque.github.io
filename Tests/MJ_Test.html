@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Mode Toggle</title>
+  <link rel="stylesheet" href="MJ_Test.css">
+</head>
+<body>
+  <h1>Color Changing Text</h1>
+  <button onclick=func1()>Click me!</button>
 
+  <script>
+    function func1(){
+      element = document.body;
+      element.classlist.toggle("dark_mode");
+    }
+  </script>
+</body>
