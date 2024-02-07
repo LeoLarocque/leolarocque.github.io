@@ -1,1 +1,458 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Volleyball</title>
 
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: white;
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: auto;
+            width: 30%;
+            cursor: cell;
+        }
+        #Title {
+            background-color: black;
+            border: 7px solid white;
+            border-radius: 3px;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        #leftcontainer {
+            position: fixed;
+        }
+        .side-bar {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .side-bar a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+        .side-bar a:hover {
+            color: #f1f1f1;
+        }
+        #Table1 {
+            font-family: arial, sans-serif;
+            width: 100%;
+            background-color: black;
+            border: white;
+            border-radius: 5px;
+        }
+        td, th {
+            color: white;
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        ul :hover {
+            background-color: white;
+            color: black;
+            width: 45%;
+        }
+        #Name1 {
+            background-color: red;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%
+        }
+        #Name2 {
+            background-color: yellow;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%
+        }
+        #Name3 {
+            background-color: darkgreen;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%
+        }
+        #Name4 {
+            background-color: lightskyblue;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%
+        }
+        #Name5 {
+            background-color: green;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%
+        }
+        #Name6 {
+            background-color: purple;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            width: 100%
+        }
+        #Name7 {
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            width: 100%
+        }
+        #Name8 {
+            background-color: grey;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            width: 100%
+        }
+        #Name9 {
+            background-color: blue;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            width: 100%
+        }
+        .main {
+            background-color: black;
+            color: white;
+            border: 3px solid white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #lead {
+            background-color: red;
+            border: 7px solid white;
+            border-radius: 3px;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            transition: transform 1s;
+        }
+        #lead:hover {
+            transform: scale(1.3)
+        }
+        #bteam {
+            background-color: red;
+            border-radius: 5px;
+            text-align: center;
+            width: 30% 
+        }
+        #cteam {
+            background-color: yellow;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            width: 30% 
+        }
+        #gteam {
+            background-color: darkgreen;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%
+        }
+        #jteam {
+            background-color: lightblue;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%
+        }
+        #pteam {
+            background-color: green;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%
+        }
+        #rteam {
+            background-color: purple;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%
+        }
+        #sateam {
+            background-color: black;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%
+        }
+        #spteam {
+            background-color: grey;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%
+        }
+        #tteam {
+            background-color: blue;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%
+        }
+        #info {
+            border: 3px solid black;
+            background-color: white;
+            padding: 3px;
+        }
+        #b2team {
+            background-color: red;
+            border: 3px solid gold;
+            border-radius: 5px;
+            width: 70%;
+            text-align: center;
+            width: 30% 
+        }
+        #c2team {
+            background-color: yellow;
+            color: black;
+            border: 3px solid rgb(205, 127, 50);
+            border-radius: 5px;
+            width: 70%;
+            text-align: center;
+            width: 30% 
+        }
+        #t2team {
+            background-color: blue;
+            border: 3px solid silver;
+            border-radius: 5px;
+            width: 70%;
+            text-align: center;
+            width: 30%
+        }
+        #g2team {
+            background-color: darkgreen;
+            width: 70%;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #j2team {
+            background-color: lightblue;
+            width: 70%;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #p2team {
+            background-color: green;
+            width: 70%;
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #r2team {
+            background-color: purple;
+            width: 70%;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #sa2team {
+            background-color: black;
+            width: 70%;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #sp2team {
+            background-color: grey;
+            width: 70%;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #Table2 {
+            font-family: arial, sans-serif;
+            background-color: black;
+            width: 100%;
+            border: white;
+            border-radius: 5px;
+        }
+        .placement {
+            text-align: center;
+        }
+    </style>
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.jRa10wQ9AYynYyX_fdd2bAHaHY?rs=1&pid=ImgDetMain" type="image/x-icon">
+</head>
+<body>
+    <div class = "side-bar">
+        <a href = "#Table1">Info Table</a>
+        <br>
+        <a href = "Brawlers.html">Brawlers</a>
+        <br>
+        <a href = "Chargers.html">Chargers</a>
+        <br>
+        <a href = "Grizzlies.html">Grizzlies</a>
+        <br>
+        <a href = "Jets.html">Jets</a>
+        <br>
+        <a href = "Patriots.html">Patriots</a>
+        <br>
+        <a href = "Royalsvballsite.html">Royals</a>
+        <br>
+        <a href = "Sabres.html">Sabres</a>
+        <br>
+        <a href = "Spartans.html">Spartans</a>
+        <br>
+        <a href = "Tempests.html">Tempests</a>
+        <br>
+        <a href = "Gallery.html">Gallery</a>
+        <br>
+        <a href = "Interactive Chart.html">Interactive Chart</a>
+    </div>
+    <h1 id = "Title">Volleyball Tournament 2023</h1>
+    <!--<h2 id = "lead">Brawlers Conquer!</h2>-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table id = "Table2">
+        <tr>
+            <th>Place</th>
+            <th>Team</th>
+        </tr>
+        <tr>
+            <td id = "b2team">Brawlers</td>
+            <td class = "placement">1</td>
+        </tr>
+        <tr>
+            <td id = "t2team">Tempests</td>
+            <td class = "placement">2</td>
+        </tr>
+        <tr>
+            <td id = "c2team">Chargers</td>
+            <td class = "placement">3</td>
+        </tr>
+        <tr>
+            <td id = "r2team">Royals</td>
+            <td class = "placement">4</td>
+        </tr>
+        <tr>
+            <td id = "p2team">Patriots</td>
+            <td class = "placement">5</td>
+        </tr>
+        <tr>
+            <td id = "j2team">Jets</td>
+            <td class = "placement">5</td>
+        </tr>
+        <tr>
+            <td id = "sp2team">Spartans</td>
+            <td class = "placement">6</td>
+        </tr>
+        <tr>
+            <td id = "sa2team">Sabres</td>
+            <td class = "placement">6</td>
+        </tr>
+        <tr>
+            <td id = "g2team">Grizzlies</td>
+            <td class = "placement">6</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <p id = "info">The table below as well as the animations on the left are before the finals therefore it does not include games won and lost in the finals.</p>
+    <br>
+    <br>
+    <br>
+    <table id = "Table1">
+        <tr>
+            <th>Team</th>
+            <th>Points</th>
+            <th>Wins</th>
+            <th>Loses</th>
+            <th>Win %</th>
+        </tr>
+        <tr>
+            <td id = "bteam">Brawlers</td>
+            <td>22</td>
+            <td class = "wins">11</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+        <tr>
+            <td id = "cteam">Chargers</td>
+            <td>28</td>
+            <td class = "wins">14</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+        <tr>
+            <td id = "gteam">Grizzlies</td>
+            <td>6</td>
+            <td class = "wins">3</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+        <tr>
+            <td id = "jteam">Jets</td>
+            <td>18</td>
+            <td class = "wins">9</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+        <tr>
+            <td id = "pteam">Patriots</td>
+            <td>18</td>
+            <td class = "wins">9</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+        <tr>
+            <td id = "rteam">Royals</td>
+            <td>20</td>
+            <td class = "wins">10</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+        <tr>
+            <td id = "sateam">Sabres</td>
+            <td>6</td>
+            <td class = "wins">3</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+        <tr>
+            <td id = "spteam">Spartans</td>
+            <td>6</td>
+            <td class = "wins">3</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+        <tr>
+            <td id = "tteam">Tempests</td>
+            <td>20</td>
+            <td class = "wins">10</td>
+            <td class = "losses"></td>
+            <td class = "percentage"></td>
+        </tr>
+    </table>
+    <script src="volleyballjava.js"> </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>P.S. Don't get mad at me if I spelled your name wrong. ;) I have to give Jack credit for suggesting a website for the tournament so here it is. Thx bro. Zachary also helped develope this website</h3>
+    <h2>Developers</h2>
+    <h3>Leo</h3>
+    <h3>Zachary</h3>
+    <h3>Wesley</h3>
+    <h3>Matthew</h3>
+    <h3>Copilot</h3>
+</body>
+</html>
