@@ -14,9 +14,7 @@ body {
     background-color: white;
     border-radius: 15px;
     color: lightblue;
-    padding: 30px;
     text-align: center;
-    width: 100%;
     margin: 10px;
     font-size: 35px;
 }
@@ -24,14 +22,13 @@ body {
 .top {
     background-color: white;
     list-style-type: none;
-    margin: 100;
-    padding: 100;
+    margin: 10;
+    padding: 0;
     overflow: hidden;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     border-radius: 15px;
-    width: 100%;
 }
 
 #leftcontainer {
@@ -304,11 +301,27 @@ ul :hover {
     text-align: center;
 }
 .fa-bars {
-            padding: 20px;
-            color: lightblue;
-            border: none;
-            background-color: white;
+    padding: 2px;
+    color: lightblue;
+    border: none;
+    background-color: white;
+    position: fixed;
+    left: 2%;
+    border-radius: 15px;
+    top: 10px;     
         }
+.fa-bullhorn {
+    padding: 2px;
+    color: lightblue;
+    border: none;
+    background-color: white;
+    position: fixed;
+    left: 95%;
+    border-radius: 15px;
+    top: 10px;
+}
+
+
 a:hover {
             color: lightblue;
         }
