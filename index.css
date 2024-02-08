@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: auto;
-    width: 30%;
+    width: 80%;
     cursor: cell;
 }
 .title {
@@ -72,7 +72,8 @@ body {
         }
 #Table1 {
     font-family: arial, sans-serif;
-    width: 30%;
+    width: 50%;
+    align: center;
     background-color: rgb(255, 255, 255);
     border: rgb(227, 222, 222);
     border-radius: 5px;
