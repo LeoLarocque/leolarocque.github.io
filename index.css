@@ -328,16 +328,16 @@ a:hover {
   display: inline-block;
   padding: 8px 16px;
   position: fixed;
-  right: 5%;
-  bottom: 5%;
+  right: 3%;
+  bottom: 3%;
 }
 .previous {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
   position: fixed;
-  left: 5%;
-  bottom: 5%;
+  left: 3%;
+  bottom: 3%;
 }
 
 .next:hover {
