@@ -31,8 +31,9 @@ function sortTable() {
       var percentageCell = rows[i].getElementsByClassName("percentage")[0];
   
       var value = Number(valueCell.innerHTML);
+      var valueL = Number(lossesCell.innerHTML);
       var losses = number_of_games - value;
-      var percentage = (value / number_of_games) * 100;
+      var percentage = (lossesL / value) * 100;
   
       percentageCell.innerHTML = percentage.toFixed(2) + "%";
       lossesCell.innerHTML = losses.toFixed (0);
