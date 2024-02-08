@@ -27,7 +27,7 @@ body {
 }
 .drop-btn {
     background-color:rgb(255,255,255);
-    width: 5%;
+    width: 50px;
     height: 5%;
     color: black;
     border: none;
