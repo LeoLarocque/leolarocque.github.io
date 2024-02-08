@@ -291,10 +291,10 @@ ul :hover {
 }
 .fa-bars {
             padding: 20px;
-            color: lightblue;
+            color: black;
             border: none;
             background-color: white;
         }
 a:hover {
-            color: lightblue;
+            color: black;
         }
