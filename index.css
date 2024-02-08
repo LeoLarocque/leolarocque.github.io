@@ -89,6 +89,12 @@ ul :hover {
     color: black;
     width: 45%;
 }
+.games-played {
+    width: 10%;
+}
+.percentage {
+    width: 6%;
+}
 #Name1 {
     background-color: red;
     border-radius: 5px;
