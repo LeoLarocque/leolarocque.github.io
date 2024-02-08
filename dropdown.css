@@ -1,6 +1,7 @@
 .dropdown {
     position: absolute;
-    width: 20%;
+    width: 10%;
+    left: 0%;
 }
 .dropdown-content {
     color: black;
