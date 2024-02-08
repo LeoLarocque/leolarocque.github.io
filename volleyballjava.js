@@ -25,16 +25,11 @@ function sortTable() {
     var table = document.getElementById("Table1");
     var rows = table.rows;
     for (var i = 1; i < rows.length; i++) {
-      var playedCell = rows[i].getElementsByClassName("games-played")[0];
-      var valueCell = rows[i].getElementsByClassName("wins")[0];
-      var lossesCell = rows[i].getElementsByClassName("losses")[0];
-      var percentageCell = rows[i].getElementsByClassName("percentage")[0];
-      var losses = Number(playedCell.innerHTML) - Number(valueCell.innerHTML);
-      var value = Number(valueCell.innerHTML);
-      var valueL = Number(lossesCell.innerHTML);
-      var percentage = (valueL / value) * 100;
-      percentageCell.innerHTML = percentage.toFixed(2) + "%";
-      lossesCell.innerHTML = losses.toFixed (0);
+        games_played = rows[i].Document.getElementsByClassName("games-played")[0];
+        wins = rows[i].Document.GetElementsByClassName("wins")[0];
+        losses = rows[i].Document.GetElementsByClassName("losses")[0];
+        points = rows[i].Document.GetElementsByClassName("points")[0];
+        win_percent = rows[i].Document.GetElementsByClassName("percentage")[0];
     }
   }
   sortTable();
