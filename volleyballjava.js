@@ -38,5 +38,5 @@ function sortTable() {
         
     }
   }
-  sortTable();
   tablebrains();
+  sortTable();
