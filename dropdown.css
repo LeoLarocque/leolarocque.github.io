@@ -1,7 +1,5 @@
 .dropdown {
-    position: fixed;
-    display: inline-block;
-    left: 3%;
+    position: absolute;
 }
 .dropdown-content {
     display: none;
