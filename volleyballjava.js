@@ -26,14 +26,14 @@ function sortTable() {
     var rows = table.rows;
     for (var i = 1; i < rows.length; i++) {
         games_played = rows[i].getElementsByClassName("games-played")[0];
-        wins = rows[i].GetElementsByClassName("wins")[0];
-        losses = rows[i].GetElementsByClassName("losses")[0];
-        points = rows[i].GetElementsByClassName("points")[0];
-        win_percent = rows[i].GetElementsByClassName("percentage")[0];
-        loss_data = Number(games_played.InnerHTML) - Number(wins.InnerHTML)
-        percent_data = (Number(wins.InnerHTML)/Number(games_played.InnerHTML))*100
-        points.InnerHTML = Number(wins.InnerHTML)*2;
-        losses.InnerHTML = loss_data.toFixed(0);
+        wins = rows[i].getElementsByClassName("wins")[0];
+        losses = rows[i].getElementsByClassName("losses")[0];
+        points = rows[i].getElementsByClassName("points")[0];
+        win_percent = rows[i].getElementsByClassName("percentage")[0];
+        loss_data = Number(games_played.innerHTML) - Number(wins.innerHTML)
+        percent_data = (Number(wins.innerHTML)/Number(games_played.innerHTML))*100
+        points.innerHTML = Number(wins.innerHTML)*2;
+        losses.innerHTML = loss_data.toFixed(0);
         win_percent.innerHTML = percent_data.toFixed(2);
         
     }
