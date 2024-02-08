@@ -30,6 +30,12 @@ function sortTable() {
         losses = rows[i].Document.GetElementsByClassName("losses")[0];
         points = rows[i].Document.GetElementsByClassName("points")[0];
         win_percent = rows[i].Document.GetElementsByClassName("percentage")[0];
+        loss_data = Number(games_played.InnerHTML) - Number(wins.InnerHTML)
+        percent_data = (Number(wins.InnerHTML)/Number(games_played.InnerHTML))*100
+        points.InnerHTML = Number(wins.InnerHTML)*2;
+        losses.InnerHTML = loss_data.toFixed(0);
+        win_percent.innerHTML = percent_data.toFixed(2);
+        
     }
   }
   sortTable();
