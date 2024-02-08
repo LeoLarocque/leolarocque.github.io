@@ -46,3 +46,14 @@ html {
     padding: 5px;
     border-radius: 5px;
 }
+
+.fa-bars {
+        padding: 20px;
+        color: lightblue;
+        border: none;
+        background-color: white;
+}
+
+a:hover {
+        color: lightblue;
+}
