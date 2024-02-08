@@ -4,8 +4,9 @@
     left: 0%;
 }
 .dropdown-content {
+    position: absolute;
     display: none;
-    top: -5px;
+    margin: 0px -20px 0px 0px;
     color: black;
     width: 100%;
     z-index: 1;
