@@ -56,10 +56,13 @@ ul :hover {
     width: 20%;
 }
 #Name1 {
-    background-color: red;
-    border-radius: 5px;
+    color: red;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 #Name2 {
     background-color: yellow;
@@ -117,11 +120,13 @@ ul :hover {
     width: 100%
 }
 .main {
-    background-color: black;
-    color: white;
-    border: 3px solid white;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
+    margin: 5% auto auto auto;
+    width: 50%;
 }
 #lead {
     background-color: red;
