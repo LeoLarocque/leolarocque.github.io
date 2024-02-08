@@ -33,7 +33,7 @@ function sortTable() {
       var value = Number(valueCell.innerHTML);
       var valueL = Number(lossesCell.innerHTML);
       var losses = number_of_games - value;
-      var percentage = (lossesL / value) * 100;
+      var percentage = (valueL / value) * 100;
   
       percentageCell.innerHTML = percentage.toFixed(2) + "%";
       /*lossesCell.innerHTML = losses.toFixed (0);*/
