@@ -25,11 +25,11 @@ function sortTable() {
     var table = document.getElementById("Table1");
     var rows = table.rows;
     for (var i = 1; i < rows.length; i++) {
-        games_played = rows[i].Document.getElementsByClassName("games-played")[0];
-        wins = rows[i].Document.GetElementsByClassName("wins")[0];
-        losses = rows[i].Document.GetElementsByClassName("losses")[0];
-        points = rows[i].Document.GetElementsByClassName("points")[0];
-        win_percent = rows[i].Document.GetElementsByClassName("percentage")[0];
+        games_played = rows[i].getElementsByClassName("games-played")[0];
+        wins = rows[i].GetElementsByClassName("wins")[0];
+        losses = rows[i].GetElementsByClassName("losses")[0];
+        points = rows[i].GetElementsByClassName("points")[0];
+        win_percent = rows[i].GetElementsByClassName("percentage")[0];
         loss_data = Number(games_played.InnerHTML) - Number(wins.InnerHTML)
         percent_data = (Number(wins.InnerHTML)/Number(games_played.InnerHTML))*100
         points.InnerHTML = Number(wins.InnerHTML)*2;
