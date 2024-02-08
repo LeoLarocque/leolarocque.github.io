@@ -110,15 +110,6 @@ ul :hover {
     font-size: 50px;
 }
 #Name7 {
-    color: black;
-    background-color: white;
-    text-align: center;
-    margin: 5% auto auto auto;
-    width: 60%;
-    height: 65px;
-    font-size: 50px;
-}
-#Name8 {
     color: grey;
     background-color: white;
     text-align: center;
@@ -127,7 +118,7 @@ ul :hover {
     height: 65px;
     font-size: 50px;
 }
-#Name9 {
+#Name8 {
     color: blue;
     background-color: white;
     text-align: center;
