@@ -49,11 +49,11 @@ html {
 
 .fa-bars {
         padding: 20px;
-        color: black;
+        color: lightblue;
         border: none;
         background-color: white;
 }
 
 a:hover {
-        color: black;
+        color: lightblue;
 }
