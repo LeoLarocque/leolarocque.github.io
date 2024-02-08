@@ -11,15 +11,15 @@ body {
     cursor: cell;
 }
 .title {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 15px;
-    color: rgb(145, 174, 199);
+    color: lightblue;
     padding: 30px;
     text-align: center;
     width: 100%;
-    position: sticky;
     margin: 10px;
 }
+
 #leftcontainer {
     position: fixed;
 }
