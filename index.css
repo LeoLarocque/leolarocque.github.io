@@ -327,6 +327,8 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
+  right: 15%;
+  position: fixed;
 }
 .previous {
   text-decoration: none;
@@ -349,7 +351,7 @@ a:hover {
 }
 
 .next {
-  background-color: #04AA6D;
+  background-color: lightblue;
   color: white;
 }
 
