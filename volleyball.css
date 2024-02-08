@@ -71,6 +71,7 @@ a:hover {
 }
 
 .next:hover {
+  background-color: white;
   color: black;
 }
 .previous:hover {
@@ -84,7 +85,7 @@ a:hover {
 }
 
 .next {
-  background-color: lightblue;
+  background-color: black;
   color: white;
 }
 
