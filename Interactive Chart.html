@@ -110,9 +110,7 @@
     <br>
     <br>
     <br>
-
     <!-- Add more div elements as needed -->
-
     <script>
         // JavaScript code to dynamically change the width based on wins
         const teamWins = {
@@ -127,7 +125,6 @@
             divTempests: 10,
             // Add more teams as needed
         };
-
         Object.keys(teamWins).forEach((teamId) => {
             const teamBox = document.getElementById(teamId);
 
@@ -136,12 +133,10 @@
                 const newWidth = Math.min(wins * 20, 250); // Adjust the scaling factor as needed
                 teamBox.style.width = `${newWidth * 5}px`;
             });
-
             /*teamBox.addEventListener('mouseleave', () => {
                 teamBox.style.width = '100px';
             });*/
         });
     </script>
 </body>
-
 </html>
