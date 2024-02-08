@@ -128,6 +128,9 @@ ul :hover {
     margin: 5% auto auto auto;
     width: 50%;
 }
+.L1 {
+    font-size: 20px;
+}    
 #lead {
     background-color: red;
     border: 7px solid white;
