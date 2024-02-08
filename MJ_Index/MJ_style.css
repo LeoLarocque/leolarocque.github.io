@@ -35,3 +35,8 @@ body {
 .drop-btn:hover {
     background-color: rgb(200,200,200);
 }
+.main_table {
+    position: relative;
+    width: 25%;
+    margin: auto;
+    padding: 10px;
