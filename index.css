@@ -65,59 +65,76 @@ ul :hover {
     font-size: 50px;
 }
 #Name2 {
-    background-color: yellow;
-    color: black;
-    border-radius: 5px;
+    color: yellow;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 #Name3 {
-    background-color: darkgreen;
-    border-radius: 5px;
+    color: darkgreen;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 #Name4 {
-    background-color: lightskyblue;
-    color: black;
-    border-radius: 5px;
+    color: lightblue;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 #Name5 {
-    background-color: green;
-    border-radius: 5px;
+    color: green;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 #Name6 {
-    background-color: purple;
-    border-radius: 5px;
-    color: white;
+    color: purple;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 #Name7 {
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 5px;
-    color: white;
+    color: black;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 #Name8 {
-    background-color: grey;
-    color: black;
-    border-radius: 5px;
+    color: grey;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 #Name9 {
-    background-color: blue;
-    border-radius: 5px;
-    color: white;
+    color: blue;
+    background-color: white;
     text-align: center;
-    width: 100%
+    margin: 5% auto auto auto;
+    width: 60%;
+    height: 65px;
+    font-size: 50px;
 }
 .main {
     background-color: white;
