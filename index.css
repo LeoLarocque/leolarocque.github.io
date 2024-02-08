@@ -292,3 +292,14 @@ ul :hover {
 .placement {
     text-align: center;
 }
+
+.fa-bars {
+            padding: 20px;
+            color: lightblue;
+            border: none;
+            background-color: white;
+        }
+
+a:hover {
+            color: lightblue;
+        }
