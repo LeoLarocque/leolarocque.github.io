@@ -303,12 +303,12 @@ ul :hover {
 .placement {
     text-align: center;
 }
-.fa-bars {
+#fa-barstest {
             padding: 20px;
-            color: black;
+            color: lightblue;
             border: none;
             background-color: white;
         }
 a:hover {
-            color: black;
+            color: lightblue;
         }
