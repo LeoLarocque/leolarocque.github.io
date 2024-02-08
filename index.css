@@ -20,7 +20,6 @@ body {
     position: sticky;
     margin: 10px;
 }
-
 #leftcontainer {
     position: fixed;
 }
@@ -53,12 +52,10 @@ body {
             text-decoration: none;
             display: block;
         }
-
         .dropdown-content a:hover {background-color: #f1f1f1}
         .dropdown:hover .dropdown-content {
             display: block;
         }
-        
         .dropdown:hover .dropbtn {
             background-color: #3e8e41;
         }
@@ -292,14 +289,12 @@ ul :hover {
 .placement {
     text-align: center;
 }
-
 .fa-bars {
             padding: 20px;
             color: lightblue;
             border: none;
             background-color: white;
         }
-
 a:hover {
             color: lightblue;
         }
