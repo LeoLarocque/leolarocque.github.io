@@ -13,7 +13,7 @@ body {
 .title {
     background-color: white;
     border-radius: 15px;
-    color: lightblue;
+    color: rgb(120, 133, 98);
     text-align: center;
     margin: 10px;
     font-size: 35px;
@@ -285,7 +285,7 @@ ul :hover {
 }
 .fa-bars {
     padding: 2px;
-    color: lightblue;
+    color: rgb(120, 122, 98);
     border: none;
     background-color: white;
     position: fixed;
@@ -296,7 +296,7 @@ ul :hover {
         }
 .fa-bullhorn {
     padding: 2px;
-    color: blue;
+    color: rgb(120, 133, 98);
     border: none;
     background-color: white;
     position: fixed;
