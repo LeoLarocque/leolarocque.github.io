@@ -1,9 +1,10 @@
 .dropdown {
     position: absolute;
+    width: 20%;
 }
 .dropdown-content {
     color: black;
-    width: 10%;
+    width: 100%;
 }
 .dropdown-content a {
     color: black;
