@@ -36,7 +36,7 @@ function sortTable() {
       var percentage = (lossesL / value) * 100;
   
       percentageCell.innerHTML = percentage.toFixed(2) + "%";
-      lossesCell.innerHTML = losses.toFixed (0);
+      /*lossesCell.innerHTML = losses.toFixed (0);*/
     }
   }
   
