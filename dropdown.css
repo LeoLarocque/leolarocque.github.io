@@ -37,4 +37,5 @@
 }
 #announcement {
     right: 2%;
+    left: initial;/* id is higher priority than class, will overwrite left in class dropdown*/
 }
