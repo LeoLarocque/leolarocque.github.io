@@ -35,6 +35,6 @@
     top: 10px;
     text-decoration: none;
 }
-.announcement {
-    right: 2% !important;
+#announcement {
+    right: 2%;
 }
