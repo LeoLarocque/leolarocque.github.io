@@ -284,40 +284,33 @@ ul :hover {
 .placement {
     text-align: center;
 }
-a:hover {
-            color: lightblue;
-        }
 .next {
+  position: absolute;
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
   position: fixed;
   right: 3%;
   bottom: 3%;
+  background-color: lightblue;
+  color: white;
 }
+.next:hover {
+    background-color: rgb(200,200,200);
+    color: black;
+  }
 .previous {
+  position: absolute;
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
   position: fixed;
   left: 3%;
   bottom: 3%;
-}
-
-.previous {
   background-color: lightblue;
   color: white;
 }
 .previous:hover {
-    background-color: rgb(200,200,200);
-    color: black;
-  }
-
-.next {
-  background-color: lightblue;
-  color: white;
-}
-.next:hover {
     background-color: rgb(200,200,200);
     color: black;
   }
