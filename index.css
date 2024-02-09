@@ -309,7 +309,7 @@ a:hover {
   color: white;
 }
 .previous:hover {
-    background-color: #ddd;
+    background-color: rgb(200,200,200);
     color: black;
   }
 
@@ -318,7 +318,7 @@ a:hover {
   color: white;
 }
 .next:hover {
-    background-color: #ddd;
+    background-color: rgb(200,200,200);
     color: black;
   }
 
