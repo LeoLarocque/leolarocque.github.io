@@ -304,24 +304,23 @@ a:hover {
   bottom: 3%;
 }
 
-.next:hover {
-  background-color: #ddd;
-  color: black;
-}
-.previous:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .previous {
   background-color: lightblue;
   color: white;
 }
+.previous:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
 .next {
   background-color: lightblue;
   color: white;
 }
+.next:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
 .round {
   border-radius: 50%;
