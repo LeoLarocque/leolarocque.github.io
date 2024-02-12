@@ -188,12 +188,6 @@ ul :hover {
     text-align: center;
     width: 30%
 }
-#sateam {
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    text-align: center;
-    width: 30%
-}
 #spteam {
     color: grey;
     border-radius: 5px;
@@ -210,79 +204,6 @@ ul :hover {
     border: 3px solid rgb(0, 0, 0);
     background-color: white;
     padding: 3px;
-}
-#b2team {
-    border: none;
-    border-radius: 5px;
-    color: red;
-    width: 70%;
-    text-align: center;
-    width: 30% 
-}
-#c2team {
-    background-color: yellow;
-    color: black;
-    border: 3px solid rgb(205, 127, 50);
-    border-radius: 5px;
-    width: 70%;
-    text-align: center;
-    width: 30% 
-}
-#t2team {
-    background-color: blue;
-    border: 3px solid silver;
-    border-radius: 5px;
-    width: 70%;
-    text-align: center;
-    width: 30%
-}
-#g2team {
-    background-color: darkgreen;
-    width: 70%;
-    border-radius: 5px;
-    text-align: center;
-}
-#j2team {
-    background-color: lightblue;
-    width: 70%;
-    color: black;
-    border-radius: 5px;
-    text-align: center;
-}
-#p2team {
-    background-color: green;
-    width: 70%;
-    color: black;
-    border-radius: 5px;
-    text-align: center;
-}
-#r2team {
-    background-color: purple;
-    width: 70%;
-    border-radius: 5px;
-    text-align: center;
-}
-#sa2team {
-    background-color: black;
-    width: 70%;
-    border-radius: 5px;
-    text-align: center;
-}
-#sp2team {
-    background-color: grey;
-    width: 70%;
-    border-radius: 5px;
-    text-align: center;
-}
-#Table2 {
-    font-family: arial, sans-serif;
-    background-color: black;
-    width: 100%;
-    border: white;
-    border-radius: 5px;
-}
-.placement {
-    text-align: center;
 }
 .next {
   position: absolute;
