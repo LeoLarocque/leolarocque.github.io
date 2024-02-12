@@ -6,12 +6,11 @@
 .dropdown-content {
     position: absolute;
     display: none;
-    margin: 0px;
     color: black;
     width: fit-content;
     z-index: 1;
-    top: 100%;
-    left: 0;
+    top: 50%;
+    left: 5px;
     border: 1px solid rgb(150, 150, 150);
     box-shadow: 3px 3px 2px rgb(150,150,150);
 }
