@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
     width: 10%;
-    left: 2%;
+    left: 1%;
     top: 2%;
 }
 .dropdown-content {
@@ -12,7 +12,7 @@
     width: fit-content;
     z-index: 1;
     top: 100%;
-    left: 5px;
+    left: 0;
     border: 1px solid rgb(150, 150, 150);
     box-shadow: 3px 3px 2px rgb(150,150,150);
 }
