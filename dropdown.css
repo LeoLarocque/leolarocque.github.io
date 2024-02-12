@@ -1,8 +1,6 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    left: 2%;
-    top: 7%;
     z-index: 0;
 }
 .dropdown-content {
