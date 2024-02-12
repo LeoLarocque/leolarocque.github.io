@@ -1,5 +1,5 @@
 .dropdown {
-    position: absolute;
+    position: relative;
     width: fit-content;
     left: 2%;
     top: 7%;
@@ -12,6 +12,7 @@
     color: black;
     width: fit-content;
     z-index: 2;
+    top: 100
     border: 1px solid rgb(150, 150, 150);
     box-shadow: 3px 3px 2px rgb(150,150,150);
 }
