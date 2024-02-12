@@ -1,6 +1,6 @@
 .dropdown {
     position: absolute;
-    width: auto;
+    width: fit-content;
     left: 2%;
     top: 7%;
 }
