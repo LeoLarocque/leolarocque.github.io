@@ -1,6 +1,6 @@
 .dropdown {
     position: relative;
-    width: fit-content;
+    width: 150px;
     left: 2%;
     top: 7%;
     z-index: 1;
