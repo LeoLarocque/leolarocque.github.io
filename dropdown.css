@@ -3,7 +3,7 @@
     display: inline-block;
     width: 10%;
     left: 1%;
-    top: 4%;
+    top: 10px;
 }
 .dropdown-content {
     position: absolute;
@@ -40,7 +40,6 @@
 .announcement {
     right: 2% !important;
     left: initial !important;/*!important will overwrite left in class dropdown*/
-    top: -4% !important;
 }
 .fa-bullhorn {
     right: inherit;
