@@ -39,7 +39,8 @@
 }
 .announcement {
     right: 2% !important;
-    left: initial !important;/* id is higher priority than class, will overwrite left in class dropdown*/
+    left: initial !important;/*!important will overwrite left in class dropdown*/
+    top: -4%;
 }
 .fa-bullhorn {
     right: inherit;
