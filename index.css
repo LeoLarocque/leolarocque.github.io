@@ -84,71 +84,7 @@ ul :hover {
 #tteam {
     color: rgb(0, 34, 255);
 }
-#Name1 {
-    color: red;
-    background-color: white;
-    text-align: center;
-    margin: 5% auto auto auto;
-    width: 60%;
-    height: 65px;
-    font-size: 50px;
-}
-#Name2 {
-    color: yellow;
-    background-color: white;
-    text-align: center;
-    margin: 5% auto auto auto;
-    width: 60%;
-    height: 65px;
-    font-size: 50px;
-}
-#Name3 {
-    color: darkgreen;
-    background-color: white;
-    text-align: center;
-    margin: 5% auto auto auto;
-    width: 60%;
-    height: 65px;
-    font-size: 50px;
-}
-#Name4 {
-    color: lightblue;
-    background-color: white;
-    text-align: center;
-    margin: 5% auto auto auto;
-    width: 60%;
-    height: 65px;
-    font-size: 50px;
-}
-#Name5 {
-    color: green;
-    background-color: white;
-    text-align: center;
-    margin: 5% auto auto auto;
-    width: 60%;
-    height: 65px;
-    font-size: 50px;
-}
-#Name6 {
-    color: purple;
-    background-color: white;
-    text-align: center;
-    margin: 5% auto auto auto;
-    width: 60%;
-    height: 65px;
-    font-size: 50px;
-}
-#Name7 {
-    color: grey;
-    background-color: white;
-    text-align: center;
-    margin: 5% auto auto auto;
-    width: 60%;
-    height: 65px;
-    font-size: 50px;
-}
-#Name8 {
-    color: blue;
+.team-title {
     background-color: white;
     text-align: center;
     margin: 5% auto auto auto;
