@@ -55,6 +55,35 @@ ul :hover {
 .percentage {
     width: 20%;
 }
+.table-names{
+    border-radius: 5px;
+    text-align: center;
+    width: 30% 
+}
+#bteam {
+    color: red;
+}
+#cteam {
+    color: rgb(253, 253, 3);
+}
+#gteam {
+    color: rgb(21, 120, 31);
+}
+#jteam {
+    color: lightblue;
+}
+#pteam {
+    color: green;
+}
+#rteam {
+    color: purple;
+}
+#spteam {
+    color: grey;
+}
+#tteam {
+    color: rgb(0, 34, 255);
+}
 #Name1 {
     color: red;
     background-color: white;
@@ -157,54 +186,6 @@ ul :hover {
 #lead:hover {
     transform: scale(1.3)
 }
-#bteam {
-    color: red;
-    border-radius: 5px;
-    text-align: center;
-    width: 30% 
-}
-#cteam {
-    color: rgb(253, 253, 3);
-    border-radius: 5px;
-    text-align: center;
-    width: 30% 
-}
-#gteam {
-    color: rgb(21, 120, 31);
-    border-radius: 5px;
-    text-align: center;
-    width: 30%
-}
-#jteam {
-    color: lightblue;
-    border-radius: 5px;
-    text-align: center;
-    width: 30%
-}
-#pteam {
-    color: green;
-    border-radius: 5px;
-    text-align: center;
-    width: 30%
-}
-#rteam {
-    color: purple;
-    border-radius: 5px;
-    text-align: center;
-    width: 30%
-}
-#spteam {
-    color: grey;
-    border-radius: 5px;
-    text-align: center;
-    width: 30%
-}
-#tteam {
-    color: rgb(0, 34, 255);
-    border-radius: 5px;
-    text-align: center;
-    width: 30%
-}
 #info {
     border: 3px solid rgb(0, 0, 0);
     background-color: white;
@@ -240,7 +221,6 @@ ul :hover {
     background-color: rgb(200,200,200);
     color: black;
   }
-
 .round {
   border-radius: 50%;
 }
