@@ -27,7 +27,7 @@
     color: lightblue;
 }
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: inline-block;
 }
 .fa-bars {
     padding: 2px;
