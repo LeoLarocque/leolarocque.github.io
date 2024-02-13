@@ -10,6 +10,7 @@
     display: none;
     color: black;
     width: fit-content;
+    min-width: 100px;
     z-index: 1;
     top: 100%;
     left: 0;
