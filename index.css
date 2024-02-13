@@ -92,21 +92,21 @@ ul :hover {
     height: 65px;
     font-size: 50px;
 }
-        .main {
-            margin: 30px;
-            background-color: #ffffff;
-            border: 1px solid black;
-            opacity: 0.6;
-            margin: 5% auto auto auto;
-            width: 50%;
-            padding: 5px;
-            backdrop-filter: blur(1.5rem);
-        }
-        .main p {
-            margin: 5%;
-            font-weight: bold;
-            color: #000000;
-        }
+.main {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    margin: 5% auto auto auto;
+    width: 50%;
+    padding: 5px;
+    backdrop-filter: blur(1.5rem);
+}
+.main p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
 .L1 {
     font-size: 20px;
 }    
