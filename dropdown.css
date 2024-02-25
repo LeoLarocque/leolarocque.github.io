@@ -51,4 +51,5 @@
     position: fixed;
     border-radius: 15px;
     text-decoration: none;
+    z-index: 1;
 }
