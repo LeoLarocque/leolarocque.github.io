@@ -39,8 +39,9 @@
     text-decoration: none;
 }
 .announcement {
-    right: 2% !important;
-    left: initial !important;/*!important will overwrite left in class dropdown*/
+    right: 2% !important;/*!important will overwrite left in class dropdown*/
+    left: initial !important;
+    top: 0 !important;
 }
 .fa-bullhorn {
     right: inherit;
