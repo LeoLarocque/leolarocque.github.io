@@ -1,45 +1,57 @@
-.dropdown {
+.drop-main {
     position: relative;
     display: inline-block;
     width: 10%;
+    left: 2%;
+
 }
-.dropdown-content {
+.drop-main-content {
     position: absolute;
     display: none;
     color: black;
     width: fit-content;
     min-width: 100px;
-    z-index: 1;
     top: 90%;
     border: 1px solid rgb(150, 150, 150);
     box-shadow: 3px 3px 2px rgb(150,150,150);
 }
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.drop-main-content a {
     display: inherit;
+    text-decoration: none;
+    padding: 12px 16px;
 }
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: lightblue;
-}
-.dropdown:hover .dropdown-content {
-    display: inline-block;
-}
-.drop-main {
-    left: 2%;
-    top: 5px;
-}
-.main-content {
-    left: 0;
+.drop-main-content a:hover {
+    color: rgb(173, 216, 230);
+    background-color: rgb(200,200,200);
 }
 .drop-announcement {
+    position: relative;
+    display: inline-block;
+    width: 10%;
     right: 2%;
-    top: 0px;
 }
-.announcement-content {
-    right: 0;
+.drop-announcement-content {
+    position: absolute;
+    display: none;
+    color: black;
+    width: fit-content;
+    min-width: 100px;
+    top: 90%;
+    border: 1px solid rgb(150, 150, 150);
+    box-shadow: 3px 3px 2px rgb(150,150,150);
+}
+
+.drop-main:hover .drop-main-content {
+    display: block;
+}
+.drop-main-content:hover .drop-main-content {
+    display: block;
+}
+.drop-announcement:hover .drop-announcement-content {
+    display: block;
+}
+.drop-announcement-content:hover .drop-announcement-content {
+    display: block;
 }
 .fa-bars {
     padding: 2px;
