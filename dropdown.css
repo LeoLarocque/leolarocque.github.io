@@ -22,6 +22,8 @@
     padding: 12px 16px;
     text-decoration: none;
     display: inherit;
+    left: inherit;
+    right: inherit;
 }
 .dropdown-content a:hover {
     background-color: #f1f1f1;
@@ -41,7 +43,7 @@
 .announcement {
     right: 2% !important;/*!important will overwrite left in class dropdown*/
     left: initial !important;
-    top: 0 !important;
+    top: 0px !important;
 }
 .fa-bullhorn {
     right: inherit;
