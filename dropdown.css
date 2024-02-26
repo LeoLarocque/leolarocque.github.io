@@ -1,6 +1,6 @@
 .dropdown {
     position: relative;
-    display: block;
+    display: inline-block;
     width: 10%;
 }
 .dropdown-content {
@@ -11,7 +11,6 @@
     min-width: 100px;
     z-index: 1;
     top: 90%;
-    left: 0;
     border: 1px solid rgb(150, 150, 150);
     box-shadow: 3px 3px 2px rgb(150,150,150);
 }
@@ -20,8 +19,6 @@
     padding: 12px 16px;
     text-decoration: none;
     display: inherit;
-    left: inherit;
-    right: inherit;
 }
 .dropdown-content a:hover {
     background-color: #f1f1f1;
@@ -35,14 +32,14 @@
     top: 5px;
 }
 .main-content {
-    left: 0%;
+    left: 0;
 }
 .drop-announcement {
     right: 2%;
     top: 0px;
 }
 .announcement-content {
-    left: 0%;
+    right: 0;
 }
 .fa-bars {
     padding: 2px;
