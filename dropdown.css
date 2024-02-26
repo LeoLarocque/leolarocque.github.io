@@ -2,8 +2,6 @@
     position: relative;
     display: inline-block;
     width: 10%;
-    left: 1%;
-    top: 5px;
 }
 .dropdown-content {
     position: absolute;
@@ -32,6 +30,20 @@
 .dropdown:hover .dropdown-content {
     display: inline-block;
 }
+.drop-main {
+    left: 2%;
+    top: 5px;
+}
+.main-content {
+    left: 0%;
+}
+.drop-announcement {
+    right: 2%;
+    top: 0px;
+}
+.announcement-content {
+    left: 0%;
+}
 .fa-bars {
     padding: 2px;
     color: rgb(61, 93, 79);
@@ -39,11 +51,6 @@
     background-color: white;
     border-radius: 15px;
     text-decoration: none;
-}
-.announcement {
-    right: 2% !important;/*!important will overwrite left in class dropdown*/
-    left: initial !important;
-    top: 0px !important;
 }
 .fa-bullhorn {
     right: inherit;
