@@ -1,6 +1,6 @@
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 10%;
 }
 .dropdown-content {
