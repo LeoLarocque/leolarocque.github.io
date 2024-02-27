@@ -1,48 +1,28 @@
 .dropdown {
     position: relative;
-    display: inline-block;
-    width: 10%;
-}
-.dropdown-content {
-    position: absolute;
-    display: none;
-    color: black;
-    width: fit-content;
-    min-width: 100px;
+    width: 100%;
+    background-color: rgba(255,255,255,0);
     z-index: 1;
-    top: 90%;
-    left: 0;
-    border: 1px solid rgb(150, 150, 150);
-    box-shadow: 3px 3px 2px rgb(150,150,150);
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: inherit;
-    left: inherit;
-    right: inherit;
-}
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: lightblue;
-}
-.dropdown:hover .dropdown-content {
-    display: inline-block;
 }
 .drop-main {
-    left: 2%;
+    position: absolute;
+    display: block;
+    left: 5px;
     top: 5px;
+    width: fit-content;
+    background-color: lightblue;
 }
-.main-content {
-    left: 0%;
+.drop-main-content {
+    display: none;
+    min-width: 100px;
+    padding: 4px;
 }
-.drop-announcement {
-    right: 2%;
-    top: 0px;
+.drop-main-content p {
+    border: 2px solid black;
+    padding: 12px 16px;
 }
-.announcement-content {
-    left: 0%;
+.drop-main:hover .drop-main-content{
+    display: block;
 }
 .fa-bars {
     padding: 2px;
@@ -52,13 +32,35 @@
     border-radius: 15px;
     text-decoration: none;
 }
+
+.drop-announce {
+    position: absolute;
+    display: block;
+    right: 5px;
+    top: 5px;
+    width: fit-content;
+    background-color: lightgreen;
+    text-align: right;
+}
+.drop-announce-content {
+    display: none;
+    max-width: 200px;
+    padding : 4px;
+    text-align: left;
+}
+
+.drop-announce-content p {
+    border: 2px solid black;
+    padding: 12px 16px;
+}
+.drop-announce:hover .drop-announce-content {
+    display: block;
+}
 .fa-bullhorn {
-    right: 0px;
     padding: 2px;
     color: rgb(61, 93, 79);
     border: none;
     background-color: white;
-    position: fixed;
     border-radius: 15px;
     text-decoration: none;
     z-index: 1;
