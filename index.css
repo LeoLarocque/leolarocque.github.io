@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    position: absolute;
+    position: relative;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
