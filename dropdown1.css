@@ -2,11 +2,11 @@
     position: relative;
     width: 100%;
     padding: 10px;
+    height: 5%;
 }
 .drop-main {
     position: absolute;
     width: 10%;
-
 }
 
 .fa-bars {
