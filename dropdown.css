@@ -26,7 +26,7 @@
     background-color: lightslategray;
 }
 .drop-main:hover .drop-main-content{
-    display: block;
+    display: inline-block;
 }
 .fa-bars {
     padding: 2px;
