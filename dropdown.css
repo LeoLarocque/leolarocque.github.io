@@ -29,7 +29,7 @@
     background-color: lightslategray;
 }
 .drop-main:hover .drop-main-content{
-    display: inline-block;
+    display: block;
 }
 .fa-bars {
     padding: 2px;
