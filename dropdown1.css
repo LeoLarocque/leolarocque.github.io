@@ -1,6 +1,12 @@
 .dropdown {
     position: relative;
     width: 100%;
+    padding: 10px;
+}
+.drop-main {
+    position: absolute;
+    width: 10%;
+
 }
 
 .fa-bars {
