@@ -20,15 +20,16 @@ body {
 }
 
 .top {
-    background-color: white;
-    list-style-type: none;
-    margin: 10;
-    padding: 0;
-    overflow: hidden;
     position: -webkit-sticky;
     position: sticky;
     top: 5%;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    list-style-type: none;
     border-radius: 15px;
+    z-index: 0;
 }
 #Table1 {
     font-family: arial, sans-serif;
