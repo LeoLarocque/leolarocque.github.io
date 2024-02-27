@@ -11,7 +11,6 @@
     left: 5px;
     top: 5px;
     width: fit-content;
-    background-color: lightblue;
 }
 .drop-main-content {
     display: none;
@@ -19,8 +18,16 @@
     padding: 4px;
 }
 .drop-main-content a {
-    border: 2px solid black;
+    display: block;
+    top: inherit;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
     padding: 12px 16px;
+}
+.drop-main-content a:hover {
+    color: lightblue;
+    background-color: lightgray;
 }
 .drop-main:hover .drop-main-content{
     display: block;
