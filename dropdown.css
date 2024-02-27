@@ -15,7 +15,6 @@
 .drop-main-content {
     display: none;
     min-width: 100px;
-    padding: 4px;
     box-shadow: 2px 2px rgb(100,100,100);
 }
 .drop-main-content a {
@@ -23,7 +22,7 @@
     top: inherit;
     text-decoration: none;
     color: black;
-    border: 1px solid black;
+    border: 1px 1px 1px 0.5px solid rgb(150,150,150);
     padding: 12px 16px;
 }
 .drop-main-content a:hover {
