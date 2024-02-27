@@ -10,16 +10,20 @@
     left: 5px;
     top: 5px;
     width: fit-content;
-    background-color: lightblue;
 }
 .drop-main-content {
     display: none;
     min-width: 100px;
     padding: 4px;
+    box-shadow: 3px 3px rgb(100,100,100);
 }
-.drop-main-content p {
-    border: 2px solid black;
+.drop-main-content a {
+    border: 1px solid rgb(50,50,50);
     padding: 12px 16px;
+}
+.drop-main-content a:hover .drop-main-content a{
+    color: lightblue;
+    background-color: lightslategray;
 }
 .drop-main:hover .drop-main-content{
     display: block;
@@ -39,7 +43,6 @@
     right: 5px;
     top: 5px;
     width: fit-content;
-    background-color: lightgreen;
     text-align: right;
 }
 .drop-announce-content {
@@ -50,7 +53,7 @@
 }
 
 .drop-announce-content p {
-    border: 2px solid black;
+    background-color: rgb(240,240,240);
     padding: 12px 16px;
 }
 .drop-announce:hover .drop-announce-content {
