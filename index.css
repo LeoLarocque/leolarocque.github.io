@@ -98,6 +98,9 @@ td, th {
 .no-left {
     border-left: none !important;
 }
+.centered {
+    text-align: center !important;
+}
 .team-title {
     background-color: white;
     text-align: center;
