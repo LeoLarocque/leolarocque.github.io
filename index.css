@@ -92,6 +92,12 @@ td, th {
 #tteam {
     color: rgb(0, 34, 255);
 }
+.no-right {
+    border-right: none !important;
+}
+.no-left {
+    border-left: none !important;
+}
 .team-title {
     background-color: white;
     text-align: center;
