@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 body {
     position: relative;
@@ -9,6 +10,11 @@ body {
     background-attachment: fixed;
     margin: auto;
     cursor: cell;
+    overflow: auto;
+    height: 100%;
+}
+.content {
+    height: 200%;
 }
 .title {
     background-color: white;
