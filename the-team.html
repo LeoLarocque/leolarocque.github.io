@@ -2,7 +2,11 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team-Dev</title>
 <style>
+body {
+  background-color: black;
+}
 html {
   box-sizing: border-box;
 }
@@ -14,6 +18,8 @@ html {
   width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
+  transition: 0.5s;
+  top: 5%;
 }
 @media screen and (max-width: 650px) {
   .column {
@@ -22,7 +28,7 @@ html {
   }
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(187, 13, 13, 0.4);
 }
 .container {
   padding: 0 16px;
@@ -49,13 +55,68 @@ html {
 .button:hover {
   background-color: #555;
 }
+#teamwork {
+  text-align: center;
+  color: white;
+  transform: skewY(-20deg);
+  text-shadow: 1px 1px 2px rgba(187, 13, 13, 0.4), 0 0 25px rgba(187, 13, 13, 0.4);
+}
+#para {
+  padding: 10px;
+  color: white;
+  transform: skewY(-20deg);
+}
+p {
+  color: white;
+}
+h2 {
+  color: white;
+}
+.previous2 {
+  position: absolute;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  position: fixed;
+  left: 3%;
+  bottom: 5%;
+  background-color: black;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(187, 13, 13, 0.4);
+  transition: 0.5s;
+  transform: skewY(-20deg);
+}
+.previous2:hover {
+    background-color: rgb(187, 13, 13, 0.4);
+    color: white;
+    box-shadow: 0 4px 8px 0 black;
+    /*transform: skewY(20deg);*/
+  }
+  .round2 {
+    border-radius: 50%;
+  }
+  .column:hover {
+    transform: skewY(20deg);
+  }
+  .row {
+    transform: skewY(-20deg);
+  }
 </style>
 </head>
 <body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 id = "teamwork">Meat the Team!</h1>
+<p id = "para">These are the developers who spent hours of toil and tears working on this website. ;)</p>
+<br>
+<br>
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="" alt="Leo" style="width:100%">
+      <!--<img src="" alt="Leo" style="width:100%">-->
       <div class="container">
         <h2>Leo</h2>
         <p class="title">Lead Developer</p>
@@ -66,7 +127,7 @@ html {
   </div>
   <div class="column">
     <div class="card">
-      <img src="" alt="Matthew" style="width:100%">
+      <!--<img src="" alt="Matthew" style="width:100%">-->
       <div class="container">
         <h2>Matthew</h2>
         <p class="title">Developer/Designer</p>
@@ -76,7 +137,7 @@ html {
   </div>
   <div class="column">
     <div class="card">
-      <img src="" alt="Wes" style="width:100%">
+      <!--<img src="" alt="Wes" style="width:100%">-->
       <div class="container">
         <h2>Wes</h2>
         <p class="title">Developer/Designer</p>
@@ -86,7 +147,7 @@ html {
   </div>
   <div class="column">
     <div class="card">
-      <img src="" alt="Zachary" style="width:100%">
+      <!--<img src="" alt="Zachary" style="width:100%">-->
       <div class="container">
         <h2>Zachary</h2>
         <p class="title">Developer/Designer</p>
@@ -95,5 +156,6 @@ html {
     </div>
   </div>
 </div>
+<a href="index.html" class="previous2 round2">&#8249;</a>
 </body>
 </html>
