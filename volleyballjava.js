@@ -20,9 +20,9 @@ function sortTable() {
       }
     }
   }
-  var number_of_games = 16;
+  const number_of_games = 16;
   function tablebrains() {
-    var table = document.getElementById("Table1");
+    const table = document.getElementById("Table1");
     var rows = table.rows;
     for (var i = 1; i < rows.length; i++) {
         games_played = rows[i].getElementsByClassName("games-played")[0];
@@ -38,5 +38,12 @@ function sortTable() {
         
     }
   }
+function update_announcement(){
+  const str_table = localStorage.getItem("AAA-00000");
+  console.log(str_table)
+  var rows = str_table.rows;
+
+}
+
   tablebrains();
   sortTable();

@@ -44,7 +44,7 @@
         <br>
         <br>
 
-        <table id="Table1" style="width:55%;">
+        <table id="Table1">
             <tr>
                 <th>Date</th>
                 <th></th>
@@ -63,5 +63,10 @@
     </div>
     <script src="https://kit.fontawesome.com/f9ac9693dd.js" crossorigin="anonymous"></script>
     <script src="volleyballjava.js"></script>
+    <script>
+        const table = document.getElementById("Table1");
+        const str_table = table.outerHTML;
+        localStorage.setItem("AAA-00000", str_table);
+    </script>
 </body>
 </html>
