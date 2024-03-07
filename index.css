@@ -3,7 +3,6 @@ html {
     height: 100%;
 }
 body {
-    position: absolute;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -111,7 +110,6 @@ td, th {
     font-size: 50px;
 }
 .main {
-    margin: 30px;
     background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(10px);
     margin: 5% auto auto auto;
