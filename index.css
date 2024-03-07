@@ -99,6 +99,8 @@ td, th {
 }
 .centered {
     text-align: center !important;
+    border-right: none !important;
+    border-left: none !important;
 }
 .team-title {
     background-color: white;
