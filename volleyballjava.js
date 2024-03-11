@@ -38,13 +38,35 @@ function sortTable() {
         
     }
   }
-function update_announcement(){
-  const str_table = localStorage.getItem("AAA-00000");
-  console.log(str_table);
-  var rows = str_table.rows;
+  function check_match(date, today){
+    date_month = date.getMonth();
+    today_month = today.getMonth();
+    date_day = date.getDay();
+    today_day = today.getDay();
 
+    if(date_month === today_month){
+        if(date_day === today_day){
+            return true;
+        }
+        else{return false;}
+    }
+    else{return false;}
+}
+
+function update_announcement(){
+  date = new Date();
+  var text;
+  const str_table = localStorage.getItem("AAA-00000");
+  const table = str_table.innerHTML;
+  var rows = table.rows;
+  for(i=1;i<(rows.length - 1);i++) {
+    var today = rows[i].getElementById("date")[0];
+    if(check_match(date,today)){
+      text.append("match.")
+    }
+    document.getElementsByClassName("drop-announce-content").innerHTML = text;
+  }
 }
 
 tablebrains();
 sortTable();
-update_announcement();
