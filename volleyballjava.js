@@ -40,10 +40,11 @@ function sortTable() {
   }
 function update_announcement(){
   const str_table = localStorage.getItem("AAA-00000");
-  console.log(str_table)
+  console.log(str_table);
   var rows = str_table.rows;
 
 }
 
-  tablebrains();
-  sortTable();
+tablebrains();
+sortTable();
+update_announcement();
