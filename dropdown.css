@@ -1,5 +1,6 @@
 .dropdown {
     position: absolute;
+    display: block;
     top: 0;
     width: 100%;
     background-color: rgba(255,255,255,0);
@@ -9,8 +10,8 @@
 .drop-main {
     position: absolute;
     display: block;
-    left: 5px;
-    top: 5px;
+    left: 15px;
+    top: 10px;
     width: fit-content;
 }
 .drop-main-content {
@@ -45,8 +46,8 @@
 .drop-announce {
     position: absolute;
     display: block;
-    right: 5px;
-    top: 5px;
+    right: 15px;
+    top: 10px;
     text-align: right;
 }
 .drop-announce-content {
