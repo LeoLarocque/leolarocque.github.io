@@ -62,7 +62,7 @@ function update_announcement(){
   for(i=1;i<(rows.length - 1);i++) {
     var today = rows[i].getElementById("date")[0];
     if(check_match(date,today)){
-      text.append("match.")
+      text.append("match.");
     }
     document.getElementsByClassName("drop-announce-content").innerHTML = text;
   }
@@ -70,3 +70,4 @@ function update_announcement(){
 
 tablebrains();
 sortTable();
+update_announcement();
