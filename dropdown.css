@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 .drop-main {
-    position: absolute;
+    position: fixed;
     display: block;
     left: 15px;
     top: 10px;
@@ -16,7 +16,7 @@
 }
 .drop-main-content {
     display: none;
-    min-width: 150px;
+    min-width: 120px;
     background-color: rgb(245,245,245);
     box-shadow: 2px 2px rgb(100,100,100);
 }
@@ -44,7 +44,7 @@
 }
 
 .drop-announce {
-    position: absolute;
+    position: fixed;
     display: block;
     right: 15px;
     top: 10px;
