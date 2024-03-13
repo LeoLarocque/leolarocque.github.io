@@ -53,7 +53,7 @@ function sortTable() {
     else{return false;}
 }
 
-function update_announcement(){
+/*function update_announcement(){
   date = new Date();
   var text;
   const str_table = localStorage.getItem("AAA-00000");
@@ -66,6 +66,10 @@ function update_announcement(){
     }
     document.getElementsByClassName("drop-announce-content").innerHTML = text;
   }
+}*/
+
+function update_announcement(){
+  document.getElementById()
 }
 
 tablebrains();
