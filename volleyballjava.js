@@ -87,7 +87,7 @@ function update_announcement(){
       var node = document.createTextNode(format_date(schedule_dates[i]))
       para.appendChild(node);
       announcement.appendChild(para);
-      annnouncement.appendChild(br)
+      announcement.appendChild(br);
     }
   }
 }
