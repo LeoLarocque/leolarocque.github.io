@@ -62,13 +62,19 @@ function check_match(date, today){
 
 
 function update_announcement(){
+  function format_date(date){
+    date_month = date.getMonth().toString();
+    date_day = date.getDay().toString();
+    formatted = date_month.concat(", ").concat(date_day);
+    return formatted;
+  }
   date = new Date()
   success = 0;
   announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule_dates.length; i++){
     if(check_match(date, schedule_dates[i])){
       const para = document.createElement("p");
-      var node = document.createTextNode(schedule_dates[i].toString())
+      var node = document.createTextNode(format_date(schedule[i]))
       para.appendChild(node);
       announcement.appendChild(para);
       success++;
@@ -77,7 +83,7 @@ function update_announcement(){
   if(success == 0){
     const para = document.createElement("p");
     for(i = 0; i < 5; i++){
-      var node = document.createTextNode(schedule_dates[i].toString())
+      var node = document.createTextNode(format_date(schedule[i]))
       para.appendChild(node);
       announcement.appendChild(para);
     }
