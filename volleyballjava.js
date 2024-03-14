@@ -63,12 +63,22 @@ function check_match(date, today){
 
 function update_announcement(){
   date = new Date()
-  for(i = 0; i < schedule_dates.length; i ++){
+  success = 0;
+  announcement = document.getElementsByClassName("drop-announce-content");
+  for(i = 0; i < schedule_dates.length; i++){
     if(check_match(date, schedule_dates[i])){
       const para = document.createElement("p");
       var node = document.createTextNode(schedule_dates[i].toString())
       para.appendChild(node);
-      announcement = document.getElementsByClassName("drop-announce-content");
+      announcement.appendChild(para);
+      success++;
+    }
+  }
+  if(success == 0){
+    const para = document.createElement("p");
+    for(i = 0; i < 5; i++){
+      var node = document.createTextNode(schedule_dates[i].toString())
+      para.appendChild(node);
       announcement.appendChild(para);
     }
   }
