@@ -62,8 +62,9 @@ function check_match(date, today){
 
 
 function update_announcement(){
+  date = new Date()
   for(i = 0; i < schedule_dates.length; i ++){
-    if(check_match(Date(), schedule_dates[i])){
+    if(check_match(date, schedule_dates[i])){
       const para = document.createElement("p");
       var node = document.createTextNode(schedule_dates[i].toString())
       para.appendChild(node);
