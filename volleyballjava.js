@@ -64,7 +64,7 @@ function check_match(date, today){
 function update_announcement(){
   date = new Date()
   success = 0;
-  announcement = document.getElementsByClassName("drop-announce-content");
+  announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule_dates.length; i++){
     if(check_match(date, schedule_dates[i])){
       const para = document.createElement("p");
