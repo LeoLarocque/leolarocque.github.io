@@ -63,9 +63,9 @@ function check_match(date, today){
 
 function update_announcement(){
   function format_date(date){
-    date_month = date.getMonth().toString();
-    date_day = date.toLocaleString("default", {month:"long"});
-    formatted = date_month.concat(", ").concat(date_day);
+    date_month = date.toLocaleString("default", {month:"long"});
+    date_day = date.getDate().toString();
+    formatted = date_month.concat(" ").concat(date_day);
     return formatted;
   }
   date = new Date()
@@ -82,10 +82,12 @@ function update_announcement(){
   }
   if(success == 0){
     const para = document.createElement("p");
+    const br = document.createElement("b");
     for(i = 0; i < 5; i++){
       var node = document.createTextNode(format_date(schedule_dates[i]))
       para.appendChild(node);
       announcement.appendChild(para);
+      annnouncement.appendChild(br)
     }
   }
 }
