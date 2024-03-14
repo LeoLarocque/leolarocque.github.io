@@ -37,6 +37,9 @@ body {
     /*border-radius: 15px;*/
     z-index: 0;
 }
+.gap {
+    background: linear-gradient(180deg, lightblue, white)
+}
 #Table1 {
     font-family: arial, sans-serif;
     width: 40%;
