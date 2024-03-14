@@ -48,7 +48,7 @@ html {
         padding: 20px;
         color: black;
         border: none;
-        background-color: white;
+        background-color: none;
 }
 a:hover {
         color: black;
