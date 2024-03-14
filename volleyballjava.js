@@ -1,3 +1,6 @@
+schedule = new Array();
+schedule_dates = new Array());
+
 function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("Table1");
