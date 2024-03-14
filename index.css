@@ -16,8 +16,8 @@ body {
     height: 200%;
 }
 .title {
-    background-color: white;
-    border-radius: 15px;
+    background-color: lightblue;
+    /*border-radius: 15px;*/
     color: rgb(61, 93, 79);
     text-align: center;
     margin: 10px;
@@ -32,9 +32,9 @@ body {
     margin: 10;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: lightblue;
     list-style-type: none;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     z-index: 0;
 }
 #Table1 {
