@@ -2,6 +2,7 @@ body {
     padding: 10px;
     margin: 0;
     user-select: none;
+    background-color: antiquewhite;
 }
 h1 {
     text-align: center;
@@ -46,6 +47,6 @@ ul li {
     text-align: center;
 }
 li:hover {
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
     cursor: pointer;
 }
