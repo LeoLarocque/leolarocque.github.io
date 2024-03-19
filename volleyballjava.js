@@ -5,6 +5,11 @@ new Date("Apr 22 2024"), new Date("Apr 22 2024"), new Date("Apr 22 2024"), new D
 new Date("Apr 29 2024"), new Date("Apr 29 2024"), new Date("Apr 30 2024"), new Date("Apr 30 2024"), new Date("May 01 2024"), new Date("May 01 2024"), new Date("May 01 2024"), new Date("May 01 2024"), new Date("May 02 2024"), new Date("May 02 2024"),
 new Date("May 06 2024"), new Date("May 06 2024"), new Date("May 07 2024"), new Date("May 07 2024"), new Date("May 07 2024"), new Date("May 07 2024"), new Date("May 08 2024"), new Date("May 08 2024"), new Date("May 09 2024"), new Date("May 09 2024"),
 new Date("May 13 2024"), new Date("May 13 2024"), new Date("May 13 2024"), new Date("May 13 2024"));
+schedule_team1 = new Array("Brawlers", "Tempests", "Chargers", "Spartans", "Royals", "Chargers", "Spartans", "Grizzlies", "Patriots", "Spartans",
+"Jets", "Grizzlies", "Patriots", "Jets", "Royals", "Tempests", "Tempests", "Chargers", "Grizzlies", "Brawlers",
+"Jets", "Chargers", "Spartans", "Grizzlies", "Spartans", "Jets", "Royals", "Patriots", "Tempests", "Patriots", "Royals", "Brawlers",
+"Brawlers", "Grizzlies", "Patriots", "Tempests", "Spartans", "Jets", "Chargers", "Patriots", "Chargers", "Tempests",
+"Jets", "Royals");
 function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("Table1");
@@ -84,7 +89,7 @@ function update_announcement(){
     const para = document.createElement("p");
     const br = document.createElement("b");
     for(i = 0; i < 5; i++){
-      var node = document.createTextNode(format_date(schedule_dates[i]))
+      var node = document.createTextNode(format_date(schedule_dates[i]), schedule_team1[i])
       para.appendChild(node);
       announcement.appendChild(para);
       announcement.appendChild(br);
