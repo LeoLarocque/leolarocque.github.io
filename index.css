@@ -11,6 +11,7 @@ body {
     cursor: cell;
     overflow: auto;
     height: 100%;
+    user-select: none;
 }
 .content {
     height: 200%;
