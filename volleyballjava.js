@@ -87,12 +87,10 @@ function update_announcement(){
   }
   if(success == 0){
     const para = document.createElement("p");
-    const br = document.createElement("b");
     for(i = 0; i < 5; i++){
-      var node = document.createTextNode(format_date(schedule_dates[i]), schedule_team1[i])
+      var node = document.createTextNode(format_date(schedule_dates[i]).concat(toString(schedule_team1[i])));
       para.appendChild(node);
       announcement.appendChild(para);
-      announcement.appendChild(br);
     }
   }
 }
