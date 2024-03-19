@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="dropdown.css">
     <!--<link rel="stylesheet" href="index.css">-->
     <style>
+      
       body {
         padding: 10px;
         height: 3000px;
-        background: linear-gradient(141deg, #0f6cb8 0%, #1518e2 51%, rgb(90, 17, 224) 75%);
+        background: linear-gradient(141deg, rgb(1, 105, 249) 0%, #15afe2 50%,#fcfcfc 99% );
         color: white;
       }
       #man {
@@ -49,28 +50,29 @@
   </head>
   <body>
     <div class="dropdown">
-        <button class="fas fa-bars fa-2x"></button>
-        <div class="drop-main-content">
-            <a href="index.html">Home</a>
-            <a href="Gallery.html">Gallery</a>
-            <!--<a href="Interactive Chart.html">Chart</a>-->
-            <a href = "Announcements.html">Announcements</a>
-            <a href="Brawlers.html">Brawlers</a>
-            <a href="Chargers.html">Chargers</a>
-            <a href="Grizzlies.html">Grizzlies</a>
-            <a href="Jets.html">Jets</a>
-            <a href="Patriots.html">Patriots</a>
-            <a href="Royals.html">Royals</a>
-            <a href="Spartans.html">Spartans</a>
-            <a href="Tempests.html">Tempests</a>
-        </div>
-    </div>
-    <div class="drop-announce">
-      <button class="fa-solid fa-bullhorn fa-2x"></button>
-      <div class="drop-announce-content">
-          <p>Hello, this is a test announcement. How are you doing? I am doing well. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sed cumque est consequatur, recusandae earum, voluptatum natus rerum fugit placeat velit eos et? Adipisci vero dicta sint nam voluptatum sed!</p>
+      <div class="drop-main">
+          <button class="fas fa-bars fa-2x"></button>
+          <div class="drop-main-content">
+              <a href="index.html">Home</a>
+              <a href="Gallery.html">Gallery</a>
+              <!--<a href="Interactive Chart.html">Chart</a>-->
+              <a href="Brawlers.html">Brawlers</a>
+              <a href="Chargers.html">Chargers</a>
+              <a href="Grizzlies.html">Grizzlies</a>
+              <a href="Jets.html">Jets</a>
+              <a href="Patriots.html">Patriots</a>
+              <a href="Royals.html">Royals</a>
+              <a href="Spartans.html">Spartans</a>
+              <a href="Tempests.html">Tempests</a>
+          </div>
       </div>
-    </div>
+  </div>
+<br>
+      <div class="drop-announce">
+          <a href = "Announcements.html" class="fa-solid fa-bullhorn fa-2x"></a>
+          <div class="drop-announce-content" id="drop-announce-content"></div>
+      </div>
+  </div>
     <h2 id = "Name1">Announcements</h2>
     <br>
     <br>
@@ -109,5 +111,6 @@
       <p>Matthew</p>
       <p>Zachary</p>
     </div>
+    <script src="https://kit.fontawesome.com/f9ac9693dd.js" crossorigin="anonymous"></script>
   </body>
 </html>
