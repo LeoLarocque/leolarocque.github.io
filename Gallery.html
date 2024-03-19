@@ -6,31 +6,19 @@
     <link rel="icon" href="Icon.png" type="image/x-icon">
     <!--<link rel="stylesheet" href="index.css">-->
     <link rel="stylesheet" href="dropdown.css">
-    <style>
-        body {
-            height: 3000px;
-            background: linear-gradient(180deg, black 35%, white 51%);
-        }
-        .left_img {
-            margin-left: 10%;
-            position: fixed;
-            z-index: 2;
-            width: 100px;
-            margin-top: 10px;
-        }
-        .right_img {
-            margin-left: 70%;
-            position: fixed;
-            z-index: 1;
-            width: 70px;
-            margin-top: 10px;
-        }
-        .center_img {
-            margin-left: 40%;
-            position: fixed;
-            width:  100px;
-            margin-top: 10px;
-        }
+
+<style>
+.container {
+  margin-left: 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+  gap: 10px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
         :root::-webkit-scrollbar{
         display: none;
       }
@@ -39,7 +27,14 @@
         scrollbar-width: none;
         -ms-overflow-style: none;
       }
-    </style>
+        body {
+            height: 100%;
+	    background: linear-gradient(180deg, lightblue 35%, white 51%);
+	    background-size: contain;
+    	    background-position: center center;
+    	    background-repeat: no-repeat
+        }
+</style>
 </head>
 <body>
     <div class="dropdown">
@@ -61,23 +56,21 @@
         </div>
     </div>
 <br>
-<div class="center_img">
-<a  href="https://imgbb.com/"><img src="https://i.ibb.co/mBMhgBF/Awesome-Spike-Leo.gif" alt="Awesome-Spike-Leo"></a>
-<br>
-<a  href="https://imgbb.com/"><img src="https://i.ibb.co/X3s3MVJ/Awesome-Spike-Keenan.gif" alt="Awesome-Spike-Keenan"></a>
-<br>
-<a  href="https://imgbb.com/"><img src="https://i.ibb.co/qFN8nnj/Awesome-Spike-Scott.gif" alt="Awesome-Spike-Scott"></a>
+
+<h1 style = "text-align: center; font-size: 50px">Gallery</h1>
+
+
+<div class="container">
+  <img src="https://i.ibb.co/mBMhgBF/Awesome-Spike-Leo.gif" alt="Awesome-Spike-Leo">
+  <img src="https://i.ibb.co/X3s3MVJ/Awesome-Spike-Keenan.gif" alt="Awesome-Spike-Keenan">
+  <img src="https://i.ibb.co/qFN8nnj/Awesome-Spike-Scott.gif" alt="Awesome-Spike-Scott">
+  <img src="https://i.ibb.co/2k0tbRS/Awesome-Spike-Cole.gif" alt="Awesome-Spike-Cole">
+  <img src="https://i.ibb.co/1Mf0pwB/Awesome-Spike-Daniel.gif" alt="Awesome-Spike-Daniel">
+  <img src="https://i.ibb.co/ZHWpk7F/Sike-Made-with-Clipchamp.gif" alt="Sike-Made-with-Clipchamp">
+  <img src="https://i.ibb.co/B3YKvgL/Epic-Save.gif" alt="Epic-Save">
+
+  <!-- Add more images as needed -->
 </div>
-<div class="left_img">
-<a  href="https://imgbb.com/"><img src="https://i.ibb.co/2k0tbRS/Awesome-Spike-Cole.gif" alt="Awesome-Spike-Cole"></a>
-<br>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/1Mf0pwB/Awesome-Spike-Daniel.gif" alt="Awesome-Spike-Daniel"></a>
-</div>
-<div class="right_img">
-<a  href="https://imgbb.com/"><img src="https://i.ibb.co/ZHWpk7F/Sike-Made-with-Clipchamp.gif" alt="Sike-Made-with-Clipchamp"></a>
-<br>
-<a  href="https://imgbb.com/"><img src="https://i.ibb.co/B3YKvgL/Epic-Save.gif" alt="Epic-Save"></a>
-</div>
-<script src="https://kit.fontawesome.com/f9ac9693dd.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f9ac9693dd.js" crossorigin="anonymous"></script>
 </body>
 </html>
