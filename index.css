@@ -28,7 +28,6 @@ body.dark-mode {
     font-size: 35px;
     font-family: papyrus;
     color: black;
-    transition: background-color 0.7s ease;
 }
 body.dark-mode .title{
     color: lightblue;
@@ -45,14 +44,12 @@ body.dark-mode .title{
     list-style-type: none;
     /*border-radius: 15px;*/
     z-index: 0;
-    transition: background-color 0.7s ease;
 }
 body.dark-mode .top {
     background-color: black;
 }
 .gap {
     background: linear-gradient(180deg, lightblue, white);
-    transition: background 0.7s ease;
 }
 body.dark-mode .gap {
     background: linear-gradient(180deg, black, #333);
