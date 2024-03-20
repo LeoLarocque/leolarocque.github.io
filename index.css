@@ -11,6 +11,7 @@ body {
     cursor: cell;
     overflow: auto;
     height: 100%;
+    transition: background-color 0.3s ease;
 }
 body.dark-mode {
     background-color: #333;
@@ -50,7 +51,7 @@ body.dark-mode .top {
 }
 .gap {
     background: linear-gradient(180deg, lightblue, white)
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 body.dark-mode .gap {
     background: linear-gradient(180deg, black, #333)
