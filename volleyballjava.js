@@ -1,11 +1,11 @@
 schedule = new Array(
   new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
-  new Array(new Date(", Apr 8 2024"), "Tempests", "Patriots", null, null),
-  new Array(new Date(", Apr 9 2024"), "Chargers", "Royals", null, null),
-  new Array(new Date(", Apr 9 2024"), "Spartans", "Jets", null, null),
-  new Array(new Date(", Apr 10 2024"), "Royals", "Tempests", null, null),
-  new Array(new Date(", Apr 10 2024"), "Chargers", "Jets", null, null),
-  new Array(new Date(", Apr 10 2024"), "Spartans", "Patriots", null, null),
+  new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null),
+  new Array(new Date("Apr 9 2024"), "Chargers", "Royals", null, null),
+  new Array(new Date("Apr 9 2024"), "Spartans", "Jets", null, null),
+  new Array(new Date("Apr 10 2024"), "Royals", "Tempests", null, null),
+  new Array(new Date("Apr 10 2024"), "Chargers", "Jets", null, null),
+  new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", null, null),
 );
 function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
@@ -70,7 +70,7 @@ function update_announcement(){
     team2 = array[2];
     date_month = date.toLocaleString("default", {month:"long"});
     date_day = date.getDate().toString();
-    formatted = date_month.concat(" ").concat(date_day).concat(": ").concat(team1).concat(" vs ").concat(team2);
+    formatted = date_month.concat(" ").concat(date_day).concat(": ").concat(team1).concat(" vs ").concat(team2).concat(" ");
     return formatted;
   }
   date = new Date()
