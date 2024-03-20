@@ -35,14 +35,16 @@
     display: block;
 }
 .fa-bars {
-    padding: 2px;
     color: black;
+    padding: 2px;
     border: none;
     background-color: rgba(0,0,0,0);
     border-radius: 15px;
     text-decoration: none;
 }
-
+body.dark-mode .fa-bars {
+    color: white;
+}
 .drop-announce {
     position: fixed;
     display: block;
@@ -74,4 +76,7 @@
     border-radius: 15px;
     text-decoration: none;
     z-index: 1;
+}
+body.dark-mode .fa-bullhorn {
+    color: white;
 }
