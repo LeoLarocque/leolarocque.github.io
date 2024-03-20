@@ -71,6 +71,9 @@ td, th {
     text-align: left;
     padding: 8px;
 }
+body.dark-mode td, th {
+    color: white;
+}
 /*ul :hover {
     background-color: white;
     color: black;
