@@ -13,7 +13,7 @@ body {
     height: 100%;
 }
 body.dark-mode {
-    background-color: navy;
+    background-color: #333;
 }
 .content {
     height: 200%;
