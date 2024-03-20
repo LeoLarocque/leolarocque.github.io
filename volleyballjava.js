@@ -70,7 +70,7 @@ function update_announcement(){
     team2 = array[2];
     date_month = date.toLocaleString("default", {month:"long"});
     date_day = date.getDate().toString();
-    formatted = date_month.concat(" ").concat(date_day).concat(": ").concat(team1).concat(" vs ").concat(team2).concat(", ");
+    formatted = date_month.concat(" ").concat(date_day).concat(": ").concat(team1).concat(" vs ").concat(team2).concat(" ");
     return formatted;
   }
   date = new Date()
