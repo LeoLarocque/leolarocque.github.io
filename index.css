@@ -56,7 +56,7 @@ body.dark-mode .gap {
     font-family: arial, sans-serif;
     width: 40%;
     margin: 0px auto;
-    border: rgb(227, 222, 222);
+    border: grey;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
