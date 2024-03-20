@@ -1,15 +1,12 @@
-schedule = new Array();
-schedule_dates = new Array(new Date("Apr 8 2024"), new Date("Apr 8 2024"), new Date("Apr 9 2024"), new Date("Apr 9 2024"), new Date("Apr 10 2024"), new Date("Apr 10 2024"), new Date("Apr 10 2024"), new Date("Apr 10 2024"), new Date("Apr 11 2024"), new Date("Apr 11 2024"),
-new Date("Apr 15 2024"), new Date("Apr 15 2024"), new Date("Apr 16 2024"), new Date("Apr 16 2024"), new Date("Apr 16 2024"), new Date("Apr 16 2024"), new Date("Apr 17 2024"), new Date("Apr 17 2024"), new Date("Apr 18 2024"), new Date("Apr 18 2024"),
-new Date("Apr 22 2024"), new Date("Apr 22 2024"), new Date("Apr 22 2024"), new Date("Apr 22 2024"), new Date("Apr 23 2024"), new Date("Apr 23 2024"), new Date("Apr 24 2024"), new Date("Apr 24 2024"), new Date("Apr 25 2024"), new Date("Apr 25 2024"), new Date("Apr 25 2024"), new Date("Apr 25 2024"),
-new Date("Apr 29 2024"), new Date("Apr 29 2024"), new Date("Apr 30 2024"), new Date("Apr 30 2024"), new Date("May 01 2024"), new Date("May 01 2024"), new Date("May 01 2024"), new Date("May 01 2024"), new Date("May 02 2024"), new Date("May 02 2024"),
-new Date("May 06 2024"), new Date("May 06 2024"), new Date("May 07 2024"), new Date("May 07 2024"), new Date("May 07 2024"), new Date("May 07 2024"), new Date("May 08 2024"), new Date("May 08 2024"), new Date("May 09 2024"), new Date("May 09 2024"),
-new Date("May 13 2024"), new Date("May 13 2024"), new Date("May 13 2024"), new Date("May 13 2024"));
-schedule_team1 = new Array("Brawlers", "Tempests", "Chargers", "Spartans", "Royals", "Chargers", "Spartans", "Grizzlies", "Patriots", "Spartans",
-"Jets", "Grizzlies", "Patriots", "Jets", "Royals", "Tempests", "Tempests", "Chargers", "Grizzlies", "Brawlers",
-"Jets", "Chargers", "Spartans", "Grizzlies", "Spartans", "Jets", "Royals", "Patriots", "Tempests", "Patriots", "Royals", "Brawlers",
-"Brawlers", "Grizzlies", "Patriots", "Tempests", "Spartans", "Jets", "Chargers", "Patriots", "Chargers", "Tempests",
-"Jets", "Royals");
+schedule = new Array(
+  new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
+  new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null),
+  new Array(new Date("Apr 9 2024"), "Chargers", "Royals", null, null),
+  new Array(new Date("Apr 9 2024"), "Spartans", "Jets", null, null),
+  new Array(new Date("Apr 10 2024"), "Royals", "Tempests", null, null),
+  new Array(new Date("Apr 10 2024"), "Chargers", "Jets", null, null),
+  new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", null, null),
+);
 function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("Table1");
@@ -67,19 +64,22 @@ function check_match(date, today){
 
 
 function update_announcement(){
-  function format_date(date){
+  function format(array){
+    date = array[0];
+    team1 = array[1];
+    team2 = array[2];
     date_month = date.toLocaleString("default", {month:"long"});
     date_day = date.getDate().toString();
-    formatted = date_month.concat(" ").concat(date_day);
+    formatted = date_month.concat(" ").concat(date_day).concat(": ").concat(team1).concat(" vs ").concat(team2);
     return formatted;
   }
   date = new Date()
   success = 0;
   announcement = document.getElementById("drop-announce-content");
-  for(i = 0; i < schedule_dates.length; i++){
-    if(check_match(date, schedule_dates[i])){
+  for(i = 0; i < schedule.length; i++){
+    if(check_match(date, schedule[i[0]])){
       const para = document.createElement("p");
-      var node = document.createTextNode(format_date(schedule_dates[i]))
+      var node = document.createTextNode(format(schedule[i]))
       para.appendChild(node);
       announcement.appendChild(para);
       success++;
@@ -88,7 +88,7 @@ function update_announcement(){
   if(success == 0){
     const para = document.createElement("p");
     for(i = 0; i < 5; i++){
-      var node = document.createTextNode(format_date(schedule_dates[i]).concat(": ").concat(schedule_team1[i]).concat(" vs "));
+      var node = document.createTextNode(format(schedule[i]));
       para.appendChild(node);
       announcement.appendChild(para);
     }
