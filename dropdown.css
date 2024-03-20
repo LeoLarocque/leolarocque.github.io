@@ -43,7 +43,7 @@
     text-decoration: none;
 }
 body.dark-mode .fa-bars {
-    color: white;
+    color: lightblue;
 }
 .drop-announce {
     position: fixed;
@@ -78,5 +78,5 @@ body.dark-mode .fa-bars {
     z-index: 1;
 }
 body.dark-mode .fa-bullhorn {
-    color: white;
+    color: lightblue;
 }
