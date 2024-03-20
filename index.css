@@ -28,7 +28,7 @@ body.dark-mode {
     color: black;
 }
 body.dark-mode .title{
-    color: #f5f5f5;
+    color: lightblue;
 }
 .top {
     position: -webkit-sticky;
