@@ -68,7 +68,10 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-body.dark-mode td, th {
+body.dark-mode td {
+    color: white;
+}
+body.dark-mode th {
     color: white;
 }
 /*ul :hover {
