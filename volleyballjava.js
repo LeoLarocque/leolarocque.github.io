@@ -1,11 +1,11 @@
 schedule = new Array(
   new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
-  new Array(new Date(" Apr 8 2024"), "Tempests", "Patriots", null, null),
-  new Array(new Date(" Apr 9 2024"), "Chargers", "Royals", null, null),
-  new Array(new Date(" Apr 9 2024"), "Spartans", "Jets", null, null),
-  new Array(new Date(" Apr 10 2024"), "Royals", "Tempests", null, null),
-  new Array(new Date(" Apr 10 2024"), "Chargers", "Jets", null, null),
-  new Array(new Date(" Apr 10 2024"), "Spartans", "Patriots", null, null),
+  new Array(new Date(", Apr 8 2024"), "Tempests", "Patriots", null, null),
+  new Array(new Date(", Apr 9 2024"), "Chargers", "Royals", null, null),
+  new Array(new Date(", Apr 9 2024"), "Spartans", "Jets", null, null),
+  new Array(new Date(", Apr 10 2024"), "Royals", "Tempests", null, null),
+  new Array(new Date(", Apr 10 2024"), "Chargers", "Jets", null, null),
+  new Array(new Date(", Apr 10 2024"), "Spartans", "Patriots", null, null),
 );
 function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
