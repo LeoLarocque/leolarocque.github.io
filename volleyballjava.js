@@ -1,5 +1,5 @@
 schedule = new Array(
-  new Array(new Date(" Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
+  new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
   new Array(new Date(" Apr 8 2024"), "Tempests", "Patriots", null, null),
   new Array(new Date(" Apr 9 2024"), "Chargers", "Royals", null, null),
   new Array(new Date(" Apr 9 2024"), "Spartans", "Jets", null, null),
