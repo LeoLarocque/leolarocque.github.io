@@ -129,6 +129,15 @@
     <a href="Brawlers.html" class="next round">&#8250;</a>
     <script src="volleyballjava.js"></script>
     <script src="https://kit.fontawesome.com/f9ac9693dd.js" crossorigin="anonymous"></script>
+    <!--Light/Dark Mode Button and Icons-->
+    <button id="toggle-mode">Toggle Dark Mode</button>
+<script>
+    const toggleButton = document.getElementById('toggle-mode');
+const body = document.body;
 
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
+</script>
 </body>
 </html>
