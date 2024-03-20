@@ -12,19 +12,24 @@ body {
     overflow: auto;
     height: 100%;
 }
+body.dark-mode {
+    background-color: #333;
+}
 .content {
     height: 200%;
 }
 .title {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     /*border-radius: 15px;*/
-    color: black;
     text-align: center;
     margin: 10px;
     font-size: 35px;
     font-family: papyrus;
+    color: black;
 }
-
+body.dark-mode .title{
+    color: #f5f5f5;
+}
 .top {
     position: -webkit-sticky;
     position: sticky;
@@ -33,25 +38,31 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: lightblue;
+    color: lightblue;
     list-style-type: none;
     /*border-radius: 15px;*/
     z-index: 0;
 }
+body.dark-mode .top {
+    background-color: black;
+}
 .gap {
     background: linear-gradient(180deg, lightblue, white)
+}
+body.dark-mode .gap {
+    background: linear-gradient(180deg, black, #333)
 }
 #Table1 {
     font-family: arial, sans-serif;
     width: 40%;
     margin: 0px auto;
-    background-color: rgb(255, 255, 255);
     border: rgb(227, 222, 222);
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 td, th {
     color: rgb(102, 102, 102);
-    border: 1px solid #dddddd;
+    border: 1px solid lightblue;
     text-align: left;
     padding: 8px;
 }
@@ -194,3 +205,4 @@ td, th {
         scrollbar-width: none;
         -ms-overflow-style: none;
       }
+    
