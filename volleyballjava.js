@@ -77,7 +77,7 @@ function update_announcement(){
   success = 0;
   announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule.length; i++){
-    if(check_match(date, schedule[i[0]])){
+    if(check_match(date, schedule[i][0])){
       const para = document.createElement("p");
       var node = document.createTextNode(format(schedule[i]))
       para.appendChild(node);
