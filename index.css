@@ -62,7 +62,7 @@ body.dark-mode .gap {
 }
 td, th {
     color: rgb(102, 102, 102);
-    border: 1px solid lightblue;
+    border: 1px solid grey;
     text-align: left;
     padding: 8px;
 }
