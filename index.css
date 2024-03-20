@@ -246,7 +246,8 @@ td, th {
 
       
       input:checked + .slider {
-        background-color: black;
+        border-color: white;
+        background-color: rgb(72, 71, 71);
       }
       
       input:focus + .slider {
@@ -267,4 +268,3 @@ td, th {
       .slider.round:before {
         border-radius: 50%;
       }
-      
