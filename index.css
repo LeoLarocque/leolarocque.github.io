@@ -21,7 +21,7 @@ body.dark-mode {
     height: 200%;
 }
 .title {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
     /*border-radius: 15px;*/
     text-align: center;
     margin: 10px;
