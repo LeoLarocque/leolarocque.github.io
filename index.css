@@ -234,7 +234,7 @@ body.dark-mode th {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ccc;
+        background-color: black;
         -webkit-transition: .4s;
         transition: .4s;
       }
@@ -246,15 +246,13 @@ body.dark-mode th {
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: white;
+        background-color: lightblue;
         -webkit-transition: .4s;
         transition: .4s;
-      }
-
-      
+      }      
       input:checked + .slider {
         border-color: white;
-        background-color: rgb(72, 71, 71);
+        background-color: #333;
       }
       
       input:focus + .slider {
