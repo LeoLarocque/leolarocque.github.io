@@ -255,9 +255,9 @@ body.dark-mode th {
         background-color: #333;
       }
       
-      input:focus + .slider {
+      /*input:focus + .slider {
         box-shadow: 0 0 1px white;
-      }
+      }*/
       
       input:checked + .slider:before {
         -webkit-transform: translateX(26px);
