@@ -270,7 +270,7 @@ body.dark-mode th {
       }      
       input:checked + .slider {
         border-color: white;
-        background-color: #333;
+        background-color: white;
       }
       
       /*input:focus + .slider {
@@ -281,6 +281,7 @@ body.dark-mode th {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
+        background-color:black;
       }
       
       /* Rounded sliders */
