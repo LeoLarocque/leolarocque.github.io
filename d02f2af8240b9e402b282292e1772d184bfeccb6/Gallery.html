@@ -54,6 +54,25 @@
 </style>
 </head>
 <body>
+	  <script>
+    const toggle = document.getElementById('theme-toggle');
+const body = document.body;
+toggle.addEventListener('change', function() {
+            document.body.classList.toggle('dark-mode', this.checked);
+            
+            // Set a cookie to store the theme preference
+            var expiryDate = new Date();
+            expiryDate.setFullYear(expiryDate.getFullYear() + 1); // The cookie will expire in 1 year
+            document.cookie = 'dark-mode=' + (this.checked ? '1' : '0') + ';expires=' + expiryDate.toUTCString() + ';path=/';
+        });
+        window.onload = function() {
+            if (document.cookie.split(';').some((item) => item.trim().startsWith('dark-mode='))) {
+                var darkMode = document.cookie.replace(/(?:(?:^|.*;\s*)dark-mode\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '1';
+                document.body.classList.toggle('dark-mode', darkMode);
+                toggle.checked = darkMode;
+            }
+        };
+</script>
     <div class="dropdown">
         <div class="drop-main">
             <button class="fas fa-bars fa-2x"></button>
@@ -102,25 +121,7 @@
   <!-- Add more images as needed -->
 </div>
   <script src="https://kit.fontawesome.com/f9ac9693dd.js" crossorigin="anonymous"></script>
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-const body = document.body;
-toggle.addEventListener('change', function() {
-            document.body.classList.toggle('dark-mode', this.checked);
-            
-            // Set a cookie to store the theme preference
-            var expiryDate = new Date();
-            expiryDate.setFullYear(expiryDate.getFullYear() + 1); // The cookie will expire in 1 year
-            document.cookie = 'dark-mode=' + (this.checked ? '1' : '0') + ';expires=' + expiryDate.toUTCString() + ';path=/';
-        });
-        window.onload = function() {
-            if (document.cookie.split(';').some((item) => item.trim().startsWith('dark-mode='))) {
-                var darkMode = document.cookie.replace(/(?:(?:^|.*;\s*)dark-mode\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '1';
-                document.body.classList.toggle('dark-mode', darkMode);
-                toggle.checked = darkMode;
-            }
-        };
-</script>
+
 </body>
 </html>
 
