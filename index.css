@@ -185,6 +185,15 @@ body.dark-mode th {
 .next:hover {
     background-color: rgb(200,200,200);
     color: black;
+    animation: shake2 0.9s;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+    animation-delay: 0.7s;
+  }
+  @keyframes shake2 {
+    0% { transform: translate(0px, 0px); }
+    50% { transform: translate(10px, 0px); }
+    100% { transform: translate(0px, 0px); }
   }
 .previous {
   position: absolute;
@@ -200,6 +209,15 @@ body.dark-mode th {
 .previous:hover {
     background-color: rgb(200,200,200);
     color: black;
+    animation: shake 0.9s;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+    animation-delay: 0.7s;
+  }
+  @keyframes shake {
+    0% { transform: translate(0px, 0px); }
+    50% { transform: translate(-10px, 0px); }
+    100% { transform: translate(0px, 0px); }
   }
 .round {
   border-radius: 50%;
@@ -252,7 +270,7 @@ body.dark-mode th {
       }      
       input:checked + .slider {
         border-color: white;
-        background-color: #333;
+        background-color: black/*#333*/;
       }
       
       /*input:focus + .slider {
