@@ -159,6 +159,11 @@ toggle.addEventListener('change', function() {
                 document.body.classList.toggle('dark-mode', darkMode);
                 toggle.checked = darkMode;
             }
+                        // Check if the user is logged in
+            if (!document.cookie.split(';').some((item) => item.trim().startsWith('loggedin='))) {
+                // If the user is not logged in, redirect them to the specified URL
+                window.location.href = "https://watson63.github.io/TestingCookies/";
+            }
         };
 </script>
 </body>
