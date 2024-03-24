@@ -38,7 +38,11 @@
                 <a onclick="LogOut()">Log Out</a>
                 <script>
                     function LogOut() {
-                    location.replace("https://leolarocque.github.io/")
+                     // Delete the 'loggedin' cookie
+            document.cookie = 'loggedin=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                // After logout, redirect to the specified URL
+    window.location.href = "https://watson63.github.io/TestingCookies/";
+
                     }
                 </script>
             </div>
