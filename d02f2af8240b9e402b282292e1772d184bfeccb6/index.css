@@ -294,4 +294,11 @@ body.dark-mode th {
 body.dark-mode .content {
     background-color: #334;
 }
-
+::selection {
+    background: navy;
+    color: white;
+  }
+body.dark-mode ::selection {
+    background: yellow;
+    color: blue;
+  }
