@@ -36,8 +36,37 @@
                     <a href="Royals.html">Royals</a>
                     <a href="Spartans.html">Spartans</a>
                     <a href="Tempests.html">Tempests</a>
+                    <a onclick="LogOut()">Log Out</a>
+                <script>
+                    function LogOut() {
+            location.replace("https://leolarocque.github.io/")
+        }
+                </script>
                 </div>
             </div>
+        <label style="right: 60px;top: 12px; position:fixed;"class="switch">
+              <input type="checkbox" id="theme-toggle">
+              <span class="slider round"></span>
+        </label>
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        toggle.addEventListener('change', function() {
+            document.body.classList.toggle('dark-mode', this.checked);
+            
+            // Set a cookie to store the theme preference
+            var expiryDate = new Date();
+            expiryDate.setFullYear(expiryDate.getFullYear() + 1); // The cookie will expire in 1 year
+            document.cookie = 'dark-mode=' + (this.checked ? '1' : '0') + ';expires=' + expiryDate.toUTCString() + ';path=/';
+        });
+        window.onload = function() {
+            if (document.cookie.split(';').some((item) => item.trim().startsWith('dark-mode='))) {
+                var darkMode = document.cookie.replace(/(?:(?:^|.*;\s*)dark-mode\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '1';
+                document.body.classList.toggle('dark-mode', darkMode);
+                toggle.checked = darkMode;
+            }
+        };
+</script>
         <div class="drop-announce">
             <a href = "Announcements.html" class="fa-solid fa-bullhorn fa-2x"></a>
             <div class="drop-announce-content">
