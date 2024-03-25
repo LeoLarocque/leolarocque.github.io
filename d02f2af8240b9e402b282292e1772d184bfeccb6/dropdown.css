@@ -91,3 +91,6 @@ body.dark-mode .fa-bars {
 body.dark-mode .fa-bullhorn {
     color: lightblue;
 }
+#logOut {
+    color: red;
+}
