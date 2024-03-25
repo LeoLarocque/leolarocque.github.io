@@ -291,4 +291,7 @@ body.dark-mode th {
       .slider.round:before {
         border-radius: 50%;
       }
+body.dark-mode .content {
+    background-color: #334;
+}
 
