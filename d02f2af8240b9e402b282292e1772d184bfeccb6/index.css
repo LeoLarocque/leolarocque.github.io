@@ -270,7 +270,7 @@ body.dark-mode th {
       }      
       input:checked + .slider {
         border-color: white;
-        background-color: #333;
+        background-color: #334;
       }
       
       /*input:focus + .slider {
