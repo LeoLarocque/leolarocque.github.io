@@ -63,6 +63,13 @@
     </style>
   </head>
   <body>
+    <script>
+        // Check if the user is logged in
+        if (!document.cookie.split(';').some((item) => item.trim().startsWith('loggedin='))) {
+            // If the user is not logged in, redirect them to the specified URL
+            window.location.href = "https://leolarocque.github.io/";
+        }
+    </script>
     <div class="dropdown">
       <div class="drop-main">
           <button class="fas fa-bars fa-2x"></button>
