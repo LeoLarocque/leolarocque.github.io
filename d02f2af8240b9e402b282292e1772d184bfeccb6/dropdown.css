@@ -15,10 +15,14 @@
     width: fit-content;
 }
 .drop-main-content {
+    border-radius: 7px;
     display: none;
     min-width: 120px;
     background-color: rgb(245,245,245);
     box-shadow: 2px 2px rgb(100,100,100);
+}
+body.dark-mode .drop-main-content {
+    background-color: #1a1d31;
 }
 .drop-main-content a {
     display: block;
@@ -26,6 +30,13 @@
     text-decoration: none;
     color: black;
     padding: 12px 16px;
+}
+body.dark-mode .drop-main-content a {
+    color: #f5f5f5;
+}
+body.dark-mode .drop-main-content a:hover {
+    color: rgb(162, 204, 218);
+    background-color: rgb(230,230,230);
 }
 .drop-main-content a:hover {
     color: rgb(162, 204, 218);
