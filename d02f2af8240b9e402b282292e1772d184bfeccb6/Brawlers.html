@@ -17,7 +17,7 @@
 }
 
 body.dark-mode {
-    background: linear-gradient(180deg,black 35%, rgb(84, 84, 84) 51%), url("pics/logo_brawlers.png");
+    background: url("pics/logo_brawlers.png"),  linear-gradient(180deg,black 35%, rgb(84, 84, 84) 51%);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -63,10 +63,6 @@ body.dark-mode {
                 </script>
                 </div>
             </div>
-        <label style="right: 60px;top: 12px; position:fixed;"class="switch">
-              <input type="checkbox" id="theme-toggle">
-              <span class="slider round"></span>
-        </label>
     <script>
         const toggle = document.getElementById('theme-toggle');
         const body = document.body;
