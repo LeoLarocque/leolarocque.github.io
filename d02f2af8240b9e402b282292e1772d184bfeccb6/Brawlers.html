@@ -9,14 +9,16 @@
     <style>
         
         body {
-    background: url("pics/logo_brawlers.png"), linear-gradient(180deg, lightblue 35%, white 51%);
+            background: url("pics/logo_brawlers.png"), linear-gradient(180deg, lightblue 35%, white 51%);
             background-repeat: no-repeat;
-}
+            background-position: center;
+        }
 
-body.dark-mode {
-    background: url("pics/logo_brawlers.png"),  linear-gradient(180deg,black 35%, gray 51%);
-    background-repeat: no-repeat;
-}
+        body.dark-mode {
+            background: url("pics/logo_brawlers.png"),  linear-gradient(180deg,black 35%, gray 51%);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
     </style>
 </head>
@@ -47,8 +49,8 @@ body.dark-mode {
                     <a onclick="LogOut()">Log Out</a>
                 <script>
                     function LogOut() {
-            location.replace("https://leolarocque.github.io/")
-        }
+                        location.replace("https://leolarocque.github.io/")
+                    }
                 </script>
                 </div>
             </div>
@@ -60,12 +62,12 @@ body.dark-mode {
                 toggle.checked = darkMode;
             }
         };
-</script>
+    </script>
         <div class="drop-announce">
-            <a href = "Announcements.html" class="fa-solid fa-bullhorn fa-2x"></a>
-            <div class="drop-announce-content">
+                <a href = "Announcements.html" class="fa-solid fa-bullhorn fa-2x"></a>
+                    <div class="drop-announce-content">
+                </div>
             </div>
-        </div>
         </div>
         <!--<h2 id = "bteam" class="team-title">Brawlers</h2>-->
         <div style="z-index:2;" class = "main">
