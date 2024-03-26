@@ -30,6 +30,7 @@ body.dark-mode .drop-main-content {
     text-decoration: none;
     color: black;
     padding: 12px 16px;
+    font-family: Verdana, sans-serif;
 }
 body.dark-mode .drop-main-content a {
     color: #f5f5f5;
@@ -66,7 +67,8 @@ body.dark-mode .fa-bars {
 .drop-announce-content {
     display: none;
     max-width: 230px;
-    padding : 4px;
+    padding: 4px;
+    font-family: Verdana, sans-serif;
     text-align: left;
     width: fit-content;
     background-color: rgb(245,245,245);
