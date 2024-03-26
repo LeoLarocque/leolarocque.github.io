@@ -299,6 +299,6 @@ body.dark-mode th {
     color: white;
   }
 body.dark-mode ::selection {
-    background: yellow;
-    color: blue;
+    background: white;
+    color: black;
   }
