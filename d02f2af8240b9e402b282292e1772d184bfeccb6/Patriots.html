@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="dropdown.css">
     <style>
         body {
-            background-image: url('pics/logo_patriots.png');
+            background: url("pics/logo_patriots.png"), linear-gradient(180deg, lightblue 35%, white 51%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        body.dark-mode {
+            background: url("pics/logo_patriots.png"),  linear-gradient(180deg,black 35%, gray 51%);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
         }
     </style>
 </head>
@@ -19,6 +29,15 @@
             // If the user is not logged in, redirect them to the specified URL
             window.location.href = "https://leolarocque.github.io/";
         }
+    </script>
+    <script>
+        window.onload = function() {
+            if (document.cookie.split(';').some((item) => item.trim().startsWith('dark-mode='))) {
+                var darkMode = document.cookie.replace(/(?:(?:^|.*;\s*)dark-mode\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '1';
+                document.body.classList.toggle('dark-mode', darkMode);
+                toggle.checked = darkMode;
+            }
+        };
     </script>
     <div class="content">
         <div class="dropdown">
