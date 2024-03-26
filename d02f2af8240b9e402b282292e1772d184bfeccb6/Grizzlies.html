@@ -56,6 +56,16 @@
                     <a href="Royals.html">Royals</a>
                     <a href="Spartans.html">Spartans</a>
                     <a href="Tempests.html">Tempests</a>
+                    <a id = "logOut" onclick="LogOut()">Log Out</a>
+                <script>
+                    function LogOut() {
+                     // Delete the 'loggedin' cookie
+            document.cookie = 'loggedin=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+                // After logout, redirect to the specified URL
+    window.location.href = "https://leolarocque.github.io/";
+
+                    }
+                </script>
                 </div>
             </div>
             <div class="drop-announce">
