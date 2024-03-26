@@ -36,7 +36,7 @@ body.dark-mode .drop-main-content a {
     color: #f5f5f5;
 }
 body.dark-mode .drop-main-content a:hover {
-    color: rgb(162, 204, 218);
+    color: black;
     background-color: rgb(230,230,230);
 }
 .drop-main-content a:hover {
