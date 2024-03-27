@@ -89,8 +89,8 @@ function update_announcement(){
   }
   if(success == 0){
     for(i = 0; i < 4; i++){
-      newDiv.textContent = format(schedule[i]);
       var newDiv = document.createElement("div");
+      newDiv.textContent = format(schedule[i]);
       announcement.appendChild(newDiv);
     }
   }
