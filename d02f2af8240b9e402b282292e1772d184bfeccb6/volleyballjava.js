@@ -1,3 +1,5 @@
+var page_name = window.location.pathname;
+
 schedule = new Array(
   new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
   new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null),
@@ -95,6 +97,14 @@ function update_announcement(){
   }
 }
 
-tablebrains();
-sortTable();
-update_announcement();
+if(page_name === "/index.html"){
+  tablebrains()
+  sortTable()
+}
+else if(page_name === "/schedule.html"){
+  //function not yet developed
+}
+
+else {
+  update_announcement()
+}
