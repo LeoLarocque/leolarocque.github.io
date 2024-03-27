@@ -26,22 +26,6 @@
     </style>
 </head>
 <body>
-    <script>
-        // Check if the user is logged in
-        if (!document.cookie.split(';').some((item) => item.trim().startsWith('loggedin='))) {
-            // If the user is not logged in, redirect them to the specified URL
-            window.location.href = "https://leolarocque.github.io/";
-        }
-    </script>
-    <script>
-        window.onload = function() {
-            if (document.cookie.split(';').some((item) => item.trim().startsWith('dark-mode='))) {
-                var darkMode = document.cookie.replace(/(?:(?:^|.*;\s*)dark-mode\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '1';
-                document.body.classList.toggle('dark-mode', darkMode);
-                toggle.checked = darkMode;
-            }
-        };
-    </script>
     <div class="content">
         <div class="dropdown">
             <div class="drop-main">
@@ -59,15 +43,6 @@
                     <a href="Spartans.html">Spartans</a>
                     <a href="Tempests.html">Tempests</a>
                     <a id = "logOut" onclick="LogOut()">Log Out</a>
-                <script>
-                    function LogOut() {
-                     // Delete the 'loggedin' cookie
-            document.cookie = 'loggedin=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-                // After logout, redirect to the specified URL
-    window.location.href = "https://leolarocque.github.io/";
-
-                    }
-                </script>
                 </div>
             </div>
             <div class="drop-announce">
@@ -92,5 +67,28 @@
         <!--<a href="#" class="next round">&#8250;</a>-->
     </div>
     <script src="https://kit.fontawesome.com/f9ac9693dd.js" crossorigin="anonymous"></script>
+    <script src="volleyballjava.js"></script>
+    <script>
+        // Check if the user is logged in
+        if(!document.cookie.split(';').some((item) => item.trim().startsWith('loggedin='))) {
+            // If the user is not logged in, redirect them to the specified URL
+            window.location.href = "https://leolarocque.github.io/";
+        }
+
+        function LogOut() {
+            // Delete the 'loggedin' cookie
+            document.cookie = 'loggedin=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            // After logout, redirect to the specified URL
+            window.location.href = "https://leolarocque.github.io/";
+        }
+
+        window.onload = function() {
+            if(document.cookie.split(';').some((item) => item.trim().startsWith('dark-mode='))) {
+                var darkMode = document.cookie.replace(/(?:(?:^|.*;\s*)dark-mode\s*\=\s*([^;]*).*$)|^.*$/, "$1") === '1';
+                document.body.classList.toggle('dark-mode', darkMode);
+                toggle.checked = darkMode;
+            }
+        };
+    </script>
 </body>
 </html>
