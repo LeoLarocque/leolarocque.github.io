@@ -96,6 +96,7 @@ function update_announcement(){
   }
 }
 
+update_announcement()//default function
 if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/index.html"){
   tablebrains()
   sortTable()
@@ -103,7 +104,6 @@ if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/index.html"){
 else if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/schedule.html"){
   //function not yet developed
 }
-
 else {
-  update_announcement()
+  //no functions yet
 }
