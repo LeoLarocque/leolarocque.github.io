@@ -1,5 +1,4 @@
 var page_name = window.location.pathname;
-console.log(page_name);
 
 schedule = new Array(
   new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
@@ -99,11 +98,11 @@ function update_announcement(){
   }
 }
 
-if(page_name === "/index.html"){
+if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/index.html"){
   tablebrains()
   sortTable()
 }
-else if(page_name === "/schedule.html"){
+else if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/schedule.html"){
   //function not yet developed
 }
 
