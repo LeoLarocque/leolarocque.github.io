@@ -1,7 +1,7 @@
 var page_name = window.location.pathname;
 
 schedule = new Array(
-  new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
+  new Array(new Date("Mar 27 2024"), "Brawlers", "Grizzlies", null, null),
   new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null),
   new Array(new Date("Apr 9 2024"), "Chargers", "Royals", null, null),
   new Array(new Date("Apr 9 2024"), "Spartans", "Jets", null, null),
@@ -81,19 +81,17 @@ function update_announcement(){
   announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule.length; i++){
     if(check_match(date, schedule[i][0])){
-      const para = document.createElement("p");
-      var node = document.createTextNode(format(schedule[i]))
-      para.appendChild(node);
-      announcement.appendChild(para);
+      var newDiv = document.createElement("div");
+      newDiv.textContent = format(schedule[i]);
+      announcement.appendChild(newDiv);
       success++;
     }
   }
   if(success == 0){
-    const para = document.createElement("p");
-    for(i = 0; i < 5; i++){
-      var node = document.createTextNode(format(schedule[i]));
-      para.appendChild(node);
-      announcement.appendChild(para);
+    var newDiv = document.createElement("div");
+    for(i = 0; i < 4; i++){
+      newDiv.textcontent = format(schedule[i]);
+      announcement.appendChild(newDiv);
     }
   }
 }
