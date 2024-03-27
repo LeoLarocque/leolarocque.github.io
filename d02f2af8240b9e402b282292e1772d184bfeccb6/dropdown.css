@@ -66,11 +66,13 @@ body.dark-mode .fa-bars {
 }
 .drop-announce-content {
     display: none;
-    max-width: 230px;
+ 
+    top: 20px;
     padding: 4px;
     font-family: Verdana, sans-serif;
     text-align: left;
     width: fit-content;
+    min-width: 190px;
     background-color: rgb(245,245,245);
     box-shadow: 2px 2px rgb(100,100,100);
 }
