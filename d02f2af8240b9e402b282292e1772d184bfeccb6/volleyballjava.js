@@ -1,4 +1,5 @@
 var page_name = window.location.pathname;
+console.log(page_name);
 
 schedule = new Array(
   new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
@@ -9,6 +10,7 @@ schedule = new Array(
   new Array(new Date("Apr 10 2024"), "Chargers", "Jets", null, null),
   new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", null, null),
 );
+
 function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("Table1");
@@ -31,7 +33,7 @@ function sortTable() {
       }
     }
   }
-const number_of_games = 16;
+
 function tablebrains() {
   const table = document.getElementById("Table1");
   var rows = table.rows;
