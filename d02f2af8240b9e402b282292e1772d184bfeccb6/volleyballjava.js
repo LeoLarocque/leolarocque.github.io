@@ -90,7 +90,7 @@ function update_announcement(){
   if(success == 0){
     var newDiv = document.createElement("div");
     for(i = 0; i < 4; i++){
-      newDiv.textcontent = format(schedule[i]);
+      newDiv.textContent = format(schedule[i]);
       announcement.appendChild(newDiv);
     }
   }
