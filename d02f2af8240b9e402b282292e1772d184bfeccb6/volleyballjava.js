@@ -1,11 +1,11 @@
 var page_name = window.location.pathname;
 
 schedule = new Array(
-  new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", 1, 1),
-  new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null),
+  new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
+  new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", 2, 0),
   new Array(new Date("Apr 9 2024"), "Chargers", "Royals", null, null),
   new Array(new Date("Apr 9 2024"), "Spartans", "Jets", null, null),
-  new Array(new Date("Apr 10 2024"), "Royals", "Tempests", null, null),
+  new Array(new Date("Apr 10 2024"), "Royals", "Tempests", 1, 1),
   new Array(new Date("Apr 10 2024"), "Chargers", "Jets", null, null),
   new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", null, null),
 );
@@ -21,7 +21,6 @@ function update_table() {
     wins2 = schedule[i][4];
     games_played = wins1 + wins2;
     for (i = 1; i < rows.length; i++){
-      console.log(rows[i].getElementsByClassName("table-names")[0].innerHTML)
       if(rows[i].getElementsByClassName("table-names")[0].innerHTML == team1){
         tot_games = rows[i].getElementsByClassName("games-played")[0];
         tot_wins = rows[i].getElementsByClassName("wins")[0];
