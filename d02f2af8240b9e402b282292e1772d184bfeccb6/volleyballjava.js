@@ -22,17 +22,17 @@ function update_table() {
     wins2 = schedule[i][4];
     games_played = wins1 + wins2;
     for (j = 1; j < rows.length; j++){
-      if(rows[i].getElementsByClassName("table-names")[0].innerHTML == team1){
-        tot_games = rows[i].getElementsByClassName("games-played")[0];
-        tot_wins = rows[i].getElementsByClassName("wins")[0];
+      if(rows[j].getElementsByClassName("table-names")[0].innerHTML == team1){
+        tot_games = rows[j].getElementsByClassName("games-played")[0];
+        tot_wins = rows[j].getElementsByClassName("wins")[0];
         tot_games_data = Number(tot_games.innerHTML) + games_played;
         tot_wins_data = Number(tot_wins.innerHTML) + wins1;
         tot_games.innerHTML = tot_games_data.toFixed(0);
         tot_wins.innerHTML = tot_wins_data.toFixed(0);
       }
-      if(rows[i].getElementsByClassName("table-names")[0].innerHTML == team2){
-        tot_games = rows[i].getElementsByClassName("games-played")[0];
-        tot_wins = rows[i].getElementsByClassName("wins")[0];
+      if(rows[j].getElementsByClassName("table-names")[0].innerHTML == team2){
+        tot_games = rows[j].getElementsByClassName("games-played")[0];
+        tot_wins = rows[j].getElementsByClassName("wins")[0];
         tot_games_data = Number(tot_games.innerHTML) + games_played;
         tot_wins_data = Number(tot_wins.innerHTML) + wins2;
         tot_games.innerHTML = tot_games_data.toFixed(0);
