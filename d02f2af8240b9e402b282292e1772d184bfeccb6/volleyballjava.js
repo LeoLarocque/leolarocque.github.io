@@ -14,7 +14,6 @@ function update_table() {
   var rows, team1, team2, wins1, wins2, games_played;
   const table = document.getElementById("Table1");
   rows = table.rows;
-  console.log(schedule.length);
   for (i = 0; i < schedule.length; i++) {
     team1 = schedule[i][1];
     team2 = schedule[i][2];
@@ -41,6 +40,7 @@ function update_table() {
     }
   }
 }
+
 function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("Table1");
@@ -81,6 +81,8 @@ function tablebrains() {
       
   }
 }
+
+
 function check_match(date, today){
   date_month = date.getMonth();
   today_month = today.getMonth();
@@ -95,8 +97,6 @@ function check_match(date, today){
   }
   else{return false;}
 }
-
-
 function update_announcement(){
   function format(array){
     date = array[0];
@@ -127,6 +127,11 @@ function update_announcement(){
   }
 }
 
+function update_schedule(){
+  const table = document.getElementById("Table1");
+  
+}
+
 update_announcement()//default function
 if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/index.html"){
   update_table()
@@ -134,7 +139,7 @@ if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/index.html"){
   sortTable()
 }
 else if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/schedule.html"){
-  //function not yet developed
+  update_schedule()
 }
 else {
   //no functions yet
