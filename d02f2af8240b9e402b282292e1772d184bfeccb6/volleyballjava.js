@@ -21,6 +21,7 @@ function update_table() {
     wins2 = schedule[i][4];
     games_played = wins1 + wins2;
     for (i = 1; i < rows.length; i++){
+      console.log(rows[i].getElementsByClassName("table-names").innerHTML)
       if(rows[i].getElementsByClassName("table-names").innerHTML === team1){
         tot_games = rows[i].getElementsByClassName("games-played")[0];
         tot_wins = rows[i].getElementsByClassName("wins")[0];
