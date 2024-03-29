@@ -10,6 +10,36 @@ schedule = new Array(
   new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", null, null),
 );
 
+function update_table() {
+  var rows, team1, team2, wins1, wins2, games_played
+  const table = document.getElementById("Table1");
+  rows = table.rows;
+  for (i = 1; i < schedule.length; i++) {
+    team1 = schedule[i][1];
+    team2 = schedule[i][2];
+    wins1 = schedule[i][3];
+    wins2 = schedule[i][4];
+    games_played = wins1 + wins2;
+    for (i = 1; i < rows.length; i++){
+      if(rows[i][0].innerHTML === team1){
+        tot_games = rows[i].getElementsByClassName("games-played")[0];
+        tot_wins = rows[i].getElementsByClassName("wins")[0];
+        tot_games_data = Number(tot_games.innerHTML) + games_played;
+        tot_wins_data = Number(tot_wins.innerHTML) + wins1;
+        tot_games.innerHTML = tot_games_data.toFixed(0);
+        tot_wins.innerHTML = tot_wins_data.toFixed(0);
+      }
+      if(rows[i][0].innerHTML === team2){
+        tot_games = rows[i].getElementsByClassName("games-played")[0];
+        tot_wins = rows[i].getElementsByClassName("wins")[0];
+        tot_games_data = Number(tot_games.innerHTML) + games_played;
+        tot_wins_data = Number(tot_wins.innerHTML) + wins2;
+        tot_games.innerHTML = tot_games_data.toFixed(0);
+        tot_wins.innerHTML = tot_wins_data.toFixed(0);
+      }
+    }
+  }
+}
 function sortTable() {
     var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("Table1");
@@ -98,6 +128,7 @@ function update_announcement(){
 
 update_announcement()//default function
 if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/index.html"){
+  update_table()
   tablebrains()
   sortTable()
 }
