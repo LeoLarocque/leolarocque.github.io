@@ -14,7 +14,7 @@ function update_table() {
   var rows, team1, team2, wins1, wins2, games_played
   const table = document.getElementById("Table1");
   rows = table.rows;
-  for (i = 1; i < schedule.length; i++) {
+  for (i = 0; i < schedule.length; i++) {
     team1 = schedule[i][1];
     team2 = schedule[i][2];
     wins1 = schedule[i][3];
