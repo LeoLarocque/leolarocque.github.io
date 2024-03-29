@@ -11,9 +11,10 @@ schedule = new Array(
 );
 
 function update_table() {
-  var rows, team1, team2, wins1, wins2, games_played
+  var rows, team1, team2, wins1, wins2, games_played;
   const table = document.getElementById("Table1");
   rows = table.rows;
+  console.log(schedule.length);
   for (i = 0; i < schedule.length; i++) {
     team1 = schedule[i][1];
     team2 = schedule[i][2];
