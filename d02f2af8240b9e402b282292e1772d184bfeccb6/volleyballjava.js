@@ -162,7 +162,7 @@ if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/index.html"){
   sortTable()
 }
 else if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/schedule.html"){
-  document.addEventListener("DOMContentLoaded"), update_schedule()
+  document.addEventListener("DOMContentLoaded", update_schedule());
 }
 else {
   //no functions yet
