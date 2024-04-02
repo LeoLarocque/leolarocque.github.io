@@ -139,7 +139,7 @@ function update_schedule(){
     var cell_team2 = row.insertCell(3);
     var cell_result = row.insertCell(4);
 
-    cell_date.innerHTML = schedule[i][0];
+    cell_date.innerHTML = schedule[i][0].toLocaleString("default", {month:"long"}).concat(" ").concat(schedule[i][0].getDate()).concat(", ").concat(schedule[i][0].getFullYear());
     cell_team1.innerHTML = schedule[i][1];
     cell_vs.innerHTML = "vs";
     cell_team2.innerHTML = schedule[i][2];
