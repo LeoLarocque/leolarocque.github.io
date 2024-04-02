@@ -86,8 +86,8 @@ function tablebrains() {
 function check_match(date, today){
   date_month = date.getMonth();
   today_month = today.getMonth();
-  date_day = date.getDay();
-  today_day = today.getDay();
+  date_day = date.getDate();
+  today_day = today.getDate();
 
   if(date_month === today_month){
       if(date_day === today_day){
@@ -112,7 +112,6 @@ function update_announcement(){
   announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule.length; i++){
     if(check_match(date, schedule[i][0])){
-
       var newDiv = document.createElement("div");
       newDiv.textContent = format(schedule[i]);
       announcement.appendChild(newDiv);
@@ -121,7 +120,6 @@ function update_announcement(){
   }
   if(success == 0){
     for(i = 0; i < 4; i++){
-      console.log(format(schedule[i]));
       var newDiv = document.createElement("div");
       newDiv.textContent = format(schedule[i]);
       announcement.appendChild(newDiv);
