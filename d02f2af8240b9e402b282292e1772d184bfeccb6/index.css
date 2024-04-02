@@ -115,14 +115,11 @@ body.dark-mode th {
 }
 .no-right {
     border-right: none !important;
+    text-align: center;
 }
 .no-left {
     border-left: none !important;
-}
-.centered {
-    text-align: center !important;
-    border-right: none !important;
-    border-left: none !important;
+    text-align: center;
 }
 .team-title {
     background-color: white;
