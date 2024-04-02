@@ -112,6 +112,7 @@ function update_announcement(){
   announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule.length; i++){
     if(check_match(date, schedule[i][0])){
+
       var newDiv = document.createElement("div");
       newDiv.textContent = format(schedule[i]);
       announcement.appendChild(newDiv);
@@ -120,6 +121,7 @@ function update_announcement(){
   }
   if(success == 0){
     for(i = 0; i < 4; i++){
+      console.log(format(schedule[i]));
       var newDiv = document.createElement("div");
       newDiv.textContent = format(schedule[i]);
       announcement.appendChild(newDiv);
