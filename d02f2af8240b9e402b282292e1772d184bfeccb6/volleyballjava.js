@@ -128,8 +128,31 @@ function update_announcement(){
 }
 
 function update_schedule(){
+  date = new Date()
   const table = document.getElementById("Table1");
-  
+  for(i=0;i<schedule.length;i++) {
+    var row = table.insertRow(-1);
+
+    var cell_date = row.insertCell(0);
+    var cell_team1 = row.insertCell(1);
+    var cell_vs = row.insertCell(2);
+    var cell_team2 = row.insertCell(3);
+    var cell_result = row.insertCell(4);
+
+    cell_date.innerHTML = schedule[i][0];
+    cell_team1.innerHTML = schedule[i][1];
+    cell_vs.innerHTML = "vs";
+    cell_team2.innerHTML = schedule[i][2];
+    if(schedule[i][0].getMonth() < date.getMonth() && schedule[i][0].getDate() < date.getDate()){
+      cell_result.innerHTML = schedule[i][3].concat("-").concat(schedule[i][4]);
+    }
+    else{cell_result = "";}
+
+    cell_team1.classList.add("no-right");
+    cell_vs.classList.add("no-right");
+    cell_vs.classList.add("no-left");
+    cell_team2.classList.add("no-left");
+  }
 }
 
 update_announcement()//default function
@@ -139,7 +162,7 @@ if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/index.html"){
   sortTable()
 }
 else if(page_name === "/d02f2af8240b9e402b282292e1772d184bfeccb6/schedule.html"){
-  update_schedule()
+  document.addEventListener("DOMContentLoaded"), update_schedule()
 }
 else {
   //no functions yet
