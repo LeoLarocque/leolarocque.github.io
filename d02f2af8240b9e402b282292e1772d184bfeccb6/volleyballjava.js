@@ -134,24 +134,17 @@ function update_schedule(){
     var row = table.insertRow(-1);
 
     var cell_date = row.insertCell(0);
-    var cell_team1 = row.insertCell(1);
-    var cell_vs = row.insertCell(2);
-    var cell_team2 = row.insertCell(3);
-    var cell_result = row.insertCell(4);
+    var cell_info = row.insertCell(1);
+    var cell_result = row.insertCell(2);
 
     cell_date.innerHTML = schedule[i][0].toLocaleString("default", {month:"long"}).concat(" ").concat(schedule[i][0].getDate()).concat(", ").concat(schedule[i][0].getFullYear());
-    cell_team1.innerHTML = schedule[i][1];
-    cell_vs.innerHTML = "vs";
-    cell_team2.innerHTML = schedule[i][2];
+    cell_team1.innerHTML = schedule[i][1].concat(" vs ").concat(schedule[i][2]);
     if(schedule[i][0].getMonth() < date.getMonth() && schedule[i][0].getDate() < date.getDate()){
       cell_result.innerHTML = schedule[i][3].concat("-").concat(schedule[i][4]);
     }
     else{cell_result = "";}
 
-    cell_team1.classList.add("no-right");
-    cell_vs.classList.add("no-right");
-    cell_vs.classList.add("no-left");
-    cell_team2.classList.add("no-left");
+
   }
 }
 
