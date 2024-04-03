@@ -82,7 +82,6 @@ function tablebrains() {
   }
 }
 
-
 function check_match(date, today){
   date_month = date.getMonth();
   today_month = today.getMonth();
@@ -97,6 +96,7 @@ function check_match(date, today){
   }
   else{return false;}
 }
+
 function update_announcement(){
   function format(array){
     date = array[0];
@@ -119,7 +119,13 @@ function update_announcement(){
     }
   }
   if(success == 0){
-    for(i = 0; i < 4; i++){
+    var date = new Date();
+    var i = 0;
+    while(schedule[i][0].getMonth() < date.getMonth() && schedule[i][0].getDate() < date.getDate()){
+      i++;
+    }
+    var j = i + 4
+    for(i; i < j; i++){
       var newDiv = document.createElement("div");
       newDiv.textContent = format(schedule[i]);
       announcement.appendChild(newDiv);
@@ -143,8 +149,6 @@ function update_schedule(){
       cell_result.innerHTML = schedule[i][3].concat("-").concat(schedule[i][4]);
     }
     else{cell_result = "";}
-
-
   }
 }
 
