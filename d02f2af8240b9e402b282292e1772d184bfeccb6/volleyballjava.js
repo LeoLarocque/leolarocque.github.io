@@ -1,7 +1,6 @@
 var page_name = window.location.pathname;
 
 schedule = new Array(
-  new Array(new Date("Apr 2 2024"), "Brawlers", "Patriots", null, null),//test
   new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
   new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null),
   new Array(new Date("Apr 9 2024"), "Chargers", "Royals", null, null),
@@ -110,9 +109,17 @@ function update_announcement(){
   }
   date = new Date()
   success = 0;
+  head = false;
   announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule.length; i++){
     if(check_match(date, schedule[i][0])){
+      if(!head){
+        var newDiv = document.createElement("div");
+        newDiv.textContent = "<strong>Today's games:</strong>";
+
+        announcement.appendChild(newDiv);
+        head = true;
+      }
       var newDiv = document.createElement("div");
       newDiv.textContent = format(schedule[i]);
       announcement.appendChild(newDiv);
@@ -120,6 +127,9 @@ function update_announcement(){
     }
   }
   if(success == 0){
+    var newDiv = document.createElement("div");
+    newDiv.textContent = "<strong>Upcoming games:</strong>";
+    announcement.appendChild(newDiv);
     var date = new Date();
     var i = 0;
     while(schedule[i][0].getMonth() <= date.getMonth() && schedule[i][0].getDate() < date.getDate()){
