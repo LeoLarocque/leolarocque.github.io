@@ -1,6 +1,7 @@
 var page_name = window.location.pathname;
 
 schedule = new Array(
+  new Array(new Date("Apr 2 2024"), "Brawlers", "Patriots", null, null),//test
   new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null),
   new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null),
   new Array(new Date("Apr 9 2024"), "Chargers", "Royals", null, null),
