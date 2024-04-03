@@ -115,7 +115,7 @@ function update_announcement(){
     if(check_match(date, schedule[i][0])){
       if(!head){
         var newDiv = document.createElement("div");
-        newDiv.textContent = "<strong>Today's games:</strong>";
+        newDiv.innerHTML = "<strong>Today's games:</strong>";
 
         announcement.appendChild(newDiv);
         head = true;
