@@ -122,7 +122,7 @@ function update_announcement(){
   if(success == 0){
     var date = new Date();
     var i = 0;
-    while(schedule[i][0].getMonth() < date.getMonth() && schedule[i][0].getDate() < date.getDate()){
+    while(schedule[i][0].getMonth() <= date.getMonth() && schedule[i][0].getDate() < date.getDate()){
       i++;
     }
     var j = i + 4
