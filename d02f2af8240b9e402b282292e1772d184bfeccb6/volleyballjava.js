@@ -128,7 +128,7 @@ function update_announcement(){
   }
   if(success == 0){
     var newDiv = document.createElement("div");
-    newDiv.textContent = "<strong>Upcoming games:</strong>";
+    newDiv.innerHTML = "<strong>Upcoming games:</strong>";
     announcement.appendChild(newDiv);
     var date = new Date();
     var i = 0;
