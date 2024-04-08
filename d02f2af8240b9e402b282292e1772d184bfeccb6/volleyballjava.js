@@ -1,8 +1,8 @@
 var page_name = window.location.pathname;
 
 schedule = new Array(
-  //new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null), moved to May 14
-  //new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null), moved to May 14
+  new Array(new Date("Apr 8 2024"), "Brawlers", "Grizzlies", null, null), //moved to May 14
+  new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null), //moved to May 14
   new Array(new Date("Apr 9 2024"), "Chargers", "Royals", null, null),
   new Array(new Date("Apr 9 2024"), "Spartans", "Jets", null, null),
   new Array(new Date("Apr 10 2024"), "Royals", "Tempests", null, null),
@@ -116,7 +116,6 @@ function update_announcement(){
       if(!head){
         var newDiv = document.createElement("div");
         newDiv.innerHTML = "<strong>Today's games:</strong>";
-
         announcement.appendChild(newDiv);
         head = true;
       }
@@ -126,7 +125,7 @@ function update_announcement(){
       success++;
     }
   }
-  if(success == 0){
+  if(success < 4){
     var newDiv = document.createElement("div");
     newDiv.innerHTML = "<strong>Upcoming games:</strong>";
     announcement.appendChild(newDiv);
@@ -135,10 +134,9 @@ function update_announcement(){
     while(schedule[i][0].getMonth() <= date.getMonth() && schedule[i][0].getDate() < date.getDate()){
       i++;
     }
-    var j = i + 4
-    for(i; i < j; i++){
+    for(var j = i; j < i + (4 - success); j++){
       var newDiv = document.createElement("div");
-      newDiv.textContent = format(schedule[i]);
+      newDiv.textContent = format(schedule[j]);
       announcement.appendChild(newDiv);
     }
   }
