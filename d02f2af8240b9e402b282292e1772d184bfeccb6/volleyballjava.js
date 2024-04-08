@@ -130,7 +130,7 @@ function update_announcement(){
     newDiv.innerHTML = "<strong>Upcoming games:</strong>";
     announcement.appendChild(newDiv);
     var date = new Date();
-    var i = 0;
+    var i = success;
     while(schedule[i - success][0].getMonth() <= date.getMonth() && schedule[i - success][0].getDate() < date.getDate()){
       i++;
     }
