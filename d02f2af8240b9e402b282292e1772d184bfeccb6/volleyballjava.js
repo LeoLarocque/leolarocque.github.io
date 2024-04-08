@@ -131,7 +131,7 @@ function update_announcement(){
     announcement.appendChild(newDiv);
     var date = new Date();
     var i = 0;
-    while(schedule[i][0].getMonth() <= date.getMonth() && schedule[i][0].getDate() < date.getDate()){
+    while(schedule[i - success][0].getMonth() <= date.getMonth() && schedule[i - success][0].getDate() < date.getDate()){
       i++;
     }
     for(var j = i; j < i + (4 - success); j++){
