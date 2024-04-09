@@ -109,7 +109,7 @@ function tablebrains() {
   }
 }
 
-function check_match(date, today){
+/*function check_match(date, today){
   date_month = date.getMonth();
   today_month = today.getMonth();
   date_day = date.getDate();
@@ -122,7 +122,7 @@ function check_match(date, today){
       else{return false;}
   }
   else{return false;}
-}
+}*/
 
 function update_announcement(){
   function format(array){
@@ -139,7 +139,7 @@ function update_announcement(){
   head = false;
   announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule.length; i++){
-    if(check_match(date, schedule[i][0])){
+    if(schedule[i][0].getMonth() === date.getMonth() && schedule[i][0].getDate() === date.getDate()){
       if(!head){
         var newDiv = document.createElement("div");
         newDiv.innerHTML = "<strong>Today's games:</strong>";
