@@ -16,7 +16,25 @@ schedule = new Array(
   new Array(new Date("Apr 15 2024"), "Grizzlies", "Chargers", null, null),
   new Array(new Date("Apr 16 2024"), "Patriots", "Chargers", null, null),
   new Array(new Date("Apr 16 2024"), "Jets", "Grizzlies", null, null),
-  new Array(new Date("Apr 16 2024"), "Royals", "Spartans", null, null)
+  new Array(new Date("Apr 16 2024"), "Royals", "Spartans", null, null),
+  new Array(new Date("Apr 16 2024"), "Tempests", "Brawlers", null, null),
+  new Array(new Date("Apr 17 2024"), "Tempests", "Royals", null, null),
+  new Array(new Date("Apr 17 2024"), "Chargers", "Jets", null, null),
+  new Array(new Date("Apr 18 2024"), "Grizzlies", "Patriots", null, null),
+  new Array(new Date("Apr 18 2024"), "Brawlers", "Spartans", null, null),
+
+  new Array(new Date("Apr 22 2024"), "Jets", "Patriots", null, null),
+  new Array(new Date("Apr 22 2024"), "Chargers", "Royals", null, null),
+  new Array(new Date("Apr 22 2024"), "Spartans", "Brawlers", null, null),
+  new Array(new Date("Apr 22 2024"), "Grizzlies", "Tempests", null, null),
+  new Array(new Date("Apr 23 2024"), "Spartans", "Grizzlies", null, null),
+  new Array(new Date("Apr 23 2024"), "Jets", "Tempests", null, null),
+  new Array(new Date("Apr 24 2024"), "Royals", "Brawlers", null, null),
+  new Array(new Date("Apr 24 2024"), "Patriots", "Chargers", null, null),
+  new Array(new Date("Apr 25 2024"), "Tempests", "Spartans", null, null),
+  new Array(new Date("Apr 25 2024"), "Patriots", "Grizzlies", null, null),
+  new Array(new Date("Apr 25 2024"), "Royals", "Jets", null, null),
+  new Array(new Date("Apr 25 2024"), "Brawlers", "Chargers", null, null),
 );
 
 function update_table() {
