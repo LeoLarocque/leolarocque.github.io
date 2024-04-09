@@ -8,6 +8,15 @@ schedule = new Array(
   new Array(new Date("Apr 10 2024"), "Royals", "Tempests", null, null),
   new Array(new Date("Apr 10 2024"), "Chargers", "Jets", null, null),
   new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", null, null),
+  new Array(new Date("Apr 10 2024"), "Grizzlies", "Brawlers", null, null),
+  new Array(new Date("Apr 11 2024"), "Patriots", "Brawlers", null, null),
+  new Array(new Date("Apr 11 2024"), "Spartans", "Tempests", null, null),
+
+  new Array(new Date("Apr 15 2024"), "Jets", "Royals", null, null),
+  new Array(new Date("Apr 15 2024"), "Grizzlies", "Chargers", null, null),
+  new Array(new Date("Apr 16 2024"), "Patriots", "Chargers", null, null),
+  new Array(new Date("Apr 16 2024"), "Jets", "Grizzlies", null, null),
+  new Array(new Date("Apr 16 2024"), "Royals", "Spartans", null, null)
 );
 
 function update_table() {
