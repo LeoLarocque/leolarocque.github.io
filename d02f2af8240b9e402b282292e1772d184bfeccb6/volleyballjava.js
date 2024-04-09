@@ -108,35 +108,21 @@ function tablebrains() {
       
   }
 }
-
-/*function check_match(date, today){
-  date_month = date.getMonth();
-  today_month = today.getMonth();
-  date_day = date.getDate();
-  today_day = today.getDate();
-
-  if(date_month === today_month){
-      if(date_day === today_day){
-          return true;
-      }
-      else{return false;}
-  }
-  else{return false;}
-}*/
+function format(array){
+  date = array[0];
+  team1 = array[1];
+  team2 = array[2];
+  date_month = date.toLocaleString("default", {month:"long"});
+  date_day = date.getDate().toString();
+  formatted = date_month.concat(" ").concat(date_day).concat(": ").concat(team1).concat(" vs ").concat(team2).concat("   ");
+  return formatted;
+}
 
 function update_announcement(){
-  function format(array){
-    date = array[0];
-    team1 = array[1];
-    team2 = array[2];
-    date_month = date.toLocaleString("default", {month:"long"});
-    date_day = date.getDate().toString();
-    formatted = date_month.concat(" ").concat(date_day).concat(": ").concat(team1).concat(" vs ").concat(team2).concat("   ");
-    return formatted;
-  }
   date = new Date()
   success = 0;
   head = false;
+  head1 = false;
   announcement = document.getElementById("drop-announce-content");
   for(i = 0; i < schedule.length; i++){
     if(schedule[i][0].getMonth() === date.getMonth() && schedule[i][0].getDate() === date.getDate()){
@@ -145,6 +131,18 @@ function update_announcement(){
         newDiv.innerHTML = "<strong>Today's games:</strong>";
         announcement.appendChild(newDiv);
         head = true;
+      }
+      var newDiv = document.createElement("div");
+      newDiv.textContent = format(schedule[i]);
+      announcement.appendChild(newDiv);
+      success++;
+    }
+    else if(schedule[i][0].getMonth() === date.getMonth(0) && schedule[i][0].getDate() - 1 === date.getDate()){
+      if(!head1){
+        var newDiv = document.createElement("div");
+        newDiv.innerHTML = "<strong>Tomorrow's games:</strong>";
+        announcement.appendChild(newDiv);
+        head1 = true;
       }
       var newDiv = document.createElement("div");
       newDiv.textContent = format(schedule[i]);
@@ -161,11 +159,7 @@ function update_announcement(){
     while(schedule[i - success][0].getMonth() <= date.getMonth() && schedule[i - success][0].getDate() < date.getDate()){
       i++;
     }
-    for(var j = i; j < i + (4 - success); j++){
-      var newDiv = document.createElement("div");
-      newDiv.textContent = format(schedule[j]);
-      announcement.appendChild(newDiv);
-    }
+    console.log(schedule[i][0])
   }
 }
 
