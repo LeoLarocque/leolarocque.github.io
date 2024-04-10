@@ -5,10 +5,10 @@ schedule = new Array(
   //new Array(new Date("Apr 8 2024"), "Tempests", "Patriots", null, null), moved to May 14
   new Array(new Date("Apr 9 2024"), "Chargers", "Royals", 0, 2),
   new Array(new Date("Apr 9 2024"), "Spartans", "Jets", 0, 2),
-  new Array(new Date("Apr 10 2024"), "Royals", "Tempests", null, null),
-  new Array(new Date("Apr 10 2024"), "Chargers", "Jets", null, null),
-  new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", null, null),
-  new Array(new Date("Apr 10 2024"), "Grizzlies", "Brawlers", null, null),
+  new Array(new Date("Apr 10 2024"), "Royals", "Tempests", 1, 0),
+  new Array(new Date("Apr 10 2024"), "Chargers", "Jets", 0, 1),
+  new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", 1, 0),
+  new Array(new Date("Apr 10 2024"), "Grizzlies", "Brawlers", 0, 1),
   new Array(new Date("Apr 11 2024"), "Patriots", "Brawlers", null, null),
   new Array(new Date("Apr 11 2024"), "Spartans", "Tempests", null, null),
 
