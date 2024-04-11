@@ -9,8 +9,8 @@ schedule = new Array(
   new Array(new Date("Apr 10 2024"), "Chargers", "Jets", 0, 1),
   new Array(new Date("Apr 10 2024"), "Spartans", "Patriots", 1, 0),
   new Array(new Date("Apr 10 2024"), "Grizzlies", "Brawlers", 0, 1),
-  new Array(new Date("Apr 11 2024"), "Patriots", "Brawlers", null, null),
-  new Array(new Date("Apr 11 2024"), "Spartans", "Tempests", null, null),
+  new Array(new Date("Apr 11 2024"), "Patriots", "Brawlers", 1, 1),
+  new Array(new Date("Apr 11 2024"), "Spartans", "Tempests", 0, 2),
 
   new Array(new Date("Apr 15 2024"), "Jets", "Royals", null, null),
   new Array(new Date("Apr 15 2024"), "Grizzlies", "Chargers", null, null),
