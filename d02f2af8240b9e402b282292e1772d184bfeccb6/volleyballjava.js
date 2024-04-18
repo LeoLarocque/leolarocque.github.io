@@ -178,7 +178,7 @@ function update_schedule(){
     if(schedule[i][0].getMonth() < date.getMonth()){
         cell_result.innerHTML = String(schedule[i][3]).concat("-").concat(String(schedule[i][4]));
     }
-    else if(schedule[i][0].getMonth() = date.getMonth() && schedule[i][0].getDate() <= date.getDate()){
+    else if(schedule[i][0].getMonth() == date.getMonth() && schedule[i][0].getDate() <= date.getDate()){
       cell_result.innerHTML = String(schedule[i][3]).concat("-").concat(String(schedule[i][4]));
     }
     else{cell_result = "";}
